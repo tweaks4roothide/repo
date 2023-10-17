@@ -1,0 +1,193 @@
+Package: Flex3beta
+Version: 1:3~Beta56
+Architecture: iphoneos-arm64e
+Maintainer: John Coates
+Depends: mobilesubstrate, firmware (>= 9.0)
+Conflicts: Flexpackage, Flexpackagebeta, com.fuyuchi.flex, Flex2packagebeta, Flex2package,  com.fuyuchi.flex2, Flex2Blackpackagebeta, com.johncoates.Flex3, Flex3FeatureCatalog
+Replaces: Flexpackage, Flexpackagebeta, com.fuyuchi.flex, Flex2packagebeta, Flex2package,  com.fuyuchi.flex2, Flex2Blackpackagebeta, com.johncoates.Flex3, Flex3FeatureCatalog
+Filename: ./debfiles/Flex3_dopamine.deb
+Size: 23135810
+MD5sum: cd061556c99138d0cd37b8d86c2cb8fd
+SHA1: fd3bd335f75dd566bbdbb5f51872fddb7b61ba5e
+SHA256: 616a00605b6aedf0bdb8fe7a7f0fdbe47fdef9325faa25b6e86dcb218241ce0f
+Section: Tweaks
+Description: Develop your own tweaks and share them on the Flex Community Cloud
+Author: John Coates
+Name: Flex 3 Beta
+Recommended: com.rpetrich.rocketbootstrap
+
+Package: com.anthopak.addtofolder-rootless
+Version: 1.4
+Architecture: iphoneos-arm64e
+Maintainer: AnthoPak <anthopakdev@gmail.com>
+Depends: firmware (>=13.0), mobilesubstrate, ws.hbang.common (>= 1.14), firmware (>= 13.0)
+Filename: ./debfiles/com.anthopak.addtofolder-rootless-v1.4.deb
+Size: 122112
+MD5sum: 410d85b4eb43d8a86209b052dd3978e2
+SHA1: 35a056a0a1d6e8c488cde1141b71a54403abf91e
+SHA256: c0f3cec9498b045752d71c79a1a5b721876291e44d1c8dbedba41f7570d0f63a
+Section: Tweaks
+Homepage: https://repo.anthopak.dev
+Description: Easily move apps to your folders
+Author: AnthoPak <anthopakdev@gmail.com>
+Depiction: https://repo.anthopak.dev/depiction/web/com.anthopak.addtofolder-rootless.php
+Icon: https://repo.anthopak.dev/assets/com.anthopak.addtofolder-rootless/icon.png
+Moderndepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.addtofolder-rootless.json
+Name: AddToFolder (Rootless)
+Sileodepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.addtofolder-rootless.json
+
+Package: com.lenglengyu.storeswitcher2-rootless
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: subdiox
+Installed-Size: 424
+Depends: firmware (>= 15), mobilesubstrate
+Filename: ./debfiles/com.lenglengyu.storeswitcher2-rootless-v1.0.2-1.deb
+Size: 100486
+MD5sum: 18fbbcbc9e7344f48eafec34eeddc7e8
+SHA1: d15e9c7fb47f52813e8edd7d2d430bfc1c5330fa
+SHA256: 9aa511f7bd33ffde57df47f7be4f6f92be0619cdaa52b229c223fc6f86eed550
+Section: Tweaks
+Description: App Store帐户页面中快速切换账号。
+Author: subdiox
+Depiction: https://repo.lenglengyu.top/packageInfo/storeswitcher2-rootless.html
+Name: StoreSwitcher-Rootless账号切换
+Sileodepiction: https://repo.lenglengyu.top/packageInfo/storeswitcher2-rootlesssileo
+
+Package: com.nahtedetihw.centeredlabels-rootless
+Version: 1.3
+Architecture: iphoneos-arm64e
+Maintainer: ETHN <ethanwhited2208@gmail.com>
+Filename: ./debfiles/com.nahtedetihw.centeredlabels-rootless-v1.3.deb
+Size: 12954
+MD5sum: 640f624f5b684c5df8c8a7407d01a067
+SHA1: f80fdc540fbb678ec4680628e76375c438a199d2
+SHA256: 74b3d4044d9478ed9b358ef22a2bfb34d19be808eb57809ffc8853878dac47c8
+Section: Tweaks
+Homepage: https://nahtedetihw.github.io
+Description: Center all labels in main Settings page.
+Tag: role::enduser
+Author: ETHN <ethanwhited2208@gmail.com>
+Depiction: https://nahtedetihw.github.io/depiction/web/com.nahtedetihw.centeredlabels-rootless.html
+Icon: https://nahtedetihw.github.io/assets/com.nahtedetihw.centeredlabels-rootless/icon.png
+Moderndepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.centeredlabels-rootless.json
+Name: CenteredLabels-Rootless
+Sileodepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.centeredlabels-rootless.json
+Someotherentrytocontrol: True
+Tags: compatible_min::ios13.0, compatible_max::ios16.4
+
+Package: com.p2kdev.deleteforeverxs
+Version: 1.1
+Architecture: iphoneos-arm64e
+Maintainer: P2KDev <p2kdev@gmail.com>
+Installed-Size: 156
+Depends: mobilesubstrate
+Filename: ./debfiles/com.p2kdev.deleteforeverxs-v1.1.deb
+Size: 7688
+MD5sum: e85ab22b22d569c2d7b4ef193ea6a0f6
+SHA1: 9e16f358820a781b41ff49d2b112d9f41cf0bfd6
+SHA256: edb66bc87d7df6298971a611084f7ad6190f7e9fe6f28867aaf787001e545d6b
+Section: Tweaks
+Description: Delete Media with moving to Recently Deleted!
+Author: P2KDev <p2kdev@gmail.com>
+Depiction: https://p2kdev.github.io/repo/depictions/index.html?packageId=com.p2kdev.deleteforeverxs
+Icon: https://p2kdev.github.io/repo/api/packageinfo/com.p2kdev.deleteforeverxs/icon.png
+Name: DeleteForeverXS
+Sileodepiction: https://p2kdev.github.io/repo/depictions/native/com.p2kdev.deleteforeverxs.json
+
+Package: com.shepgoba.downloadbar13
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: alias20
+Installed-Size: 168
+Depends: mobilesubstrate
+Filename: ./debfiles/com.shepgoba.downloadbar13-v1.0.2.deb
+Size: 6490
+MD5sum: 97cf407c739279eee5107e7699a34166
+SHA1: 51b245a0d11bc5bda3fe6b552fdc097d670e19d9
+SHA256: 5822093a1a3cba04050539a9e57d865981e520485542178ed28a6e64196197f2
+Section: Tweaks
+Description: Show a progress bar for downloading apps instead! Confirmed worked on iOS 15/rootless.
+Author: shepgoba
+Name: DownloadBar13
+
+Package: me.lau.atria
+Version: 1.4.1
+Architecture: iphoneos-arm64e
+Maintainer: ren7995 <lau7995ren@gmail.com>
+Installed-Size: 886
+Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader, ws.hbang.alderis (>= 1.1)
+Conflicts: com.irepo.boxy4, me.kritanta.homepluspro
+Filename: ./debfiles/me.lau.atria-v1.4.1.deb
+Size: 267260
+MD5sum: b8a3e9ca0280176da496a5d51e4469f4
+SHA1: 1a3cba85e894f8fd76a87c64be39d154cc27270c
+SHA256: feee9afc1be4eff687dc9c11edd2fe8395358eb6d3fa8f0ac3623339932fcd08
+Section: Tweaks
+Description: A proper homescreen layout editor for iOS 13-16
+Tag: compatible_min::ios13.0
+Author: ren7995 <lau7995ren@gmail.com>
+Depiction: https://chariz.com/get/atria
+Icon: https://img.chariz.cloud/icon/atria/icon@3x.png
+Name: Atria
+
+Package: me.nepeta.axon
+Version: 1.4-1
+Architecture: iphoneos-arm64e
+Maintainer: Baw Appie
+Installed-Size: 644
+Depends: mobilesubstrate, firmware (>= 11.0)
+Conflicts: io.ominousness.stackxi, com.thomasfinch.priorityhub, com.ioscreatix.intelixbeta, com.ioscreatix.intelix, com.spiritoflogic.ncunify, com.spiritoflogic.unifyx, com.hidan.nclink10, org.coolstar.ventana-modern, org.coolstar.ventana, org.s1ris.spinxi
+Filename: ./debfiles/me.nepeta.axon-v1.4-1.deb
+Size: 166638
+MD5sum: de5c41df76d1976d1e7fc1048691ca86
+SHA1: 74cec796a6c75474325ab8d11092107753f9c21b
+SHA256: 65b66a963f2f0d75ee7005c678e0af4dd0b590f484a11fe49500b5290a87464f
+Section: Tweaks
+Description: Priority Hub for iOS 15 (rootless/Ellekit)
+Author: Nepeta & Baw Appie
+Name: Axon
+
+Package: pro.ikghd.ikset
+Version: 3.3
+Architecture: iphoneos-arm64e
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 412
+Depends: mobilesubstrate, firmware (>= 15.0), preferenceloader
+Conflicts: com.yourepo.ikghd.ikset, pro.ikghd.iksettings
+Replaces: pro.ikghd.iksettings
+Filename: ./debfiles/pro.ikghd.ikset-v3.3.deb
+Size: 53286
+MD5sum: a4ca093dc24b773bb6a63c241a0c1f73
+SHA1: 75782d2ca8673ab311c77804e9ff1569881c6f19
+SHA256: 84e0a0a7fcab62b65668f91fe237e4770883bb4f6efa75a5fe0874ad8d06766d
+Section: Tweaks
+Priority: optional
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=iksetDp
+Description: Redefined Settings app!
+Tag: purpose::extension
+Author: iKarwan <ikghd3@gmail.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=iksetDp
+Dev: ikghd
+Icon: file:///var/jb/Library/PreferenceBundles/iKSPrefs.bundle/icon@2x.png
+Name: iKSettings
+Sponsor: thebigboss.org <http://thebigboss.org>
+
+Package: xyz.cypwn.lastlook
+Version: 3.6.5
+Architecture: iphoneos-arm64e
+Maintainer: CyPwn
+Depends: mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.15), firmware (>= 12.0)
+Filename: ./debfiles/xyz.cypwn.lastlook-v3.6.5.deb
+Size: 434106
+MD5sum: 4a8b5f4b7200b6e638a52fd037e4eee3
+SHA1: 2eb308350d49294624cec18fd13c24a41b61cbed
+SHA256: d512921de0ad094a9c6a63db54d0d46c1de3e9982a4aa3a9689d8b705dd22bbf
+Section: Tweaks
+Description: An AOD tweak that feels stock, with endless possibilities!
+Author: AnthoPak
+Depiction: https://repo.cypwn.xyz/depiction/1275
+Icon: https://img.chariz.cloud/icon/lastlook/icon@3x.png
+Name: LastLook
+Sileodepiction: https://repo.cypwn.xyz/sileo_depiction/1275
+
