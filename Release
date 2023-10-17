@@ -3,7 +3,7 @@ Label: tweaks4roothide
 Suite: stable
 Version: 1.0
 Codename: tweaks4roothide
-Architecture: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
+Architecture: iphoneos-arm
 Components: main
 Description: tweaks4roothide's Tweaks
 MD5Sum:
