@@ -1,11 +1,11 @@
-Origin: tweaks4roothide's Repo
-Label: tweaks4roothide
+Origin: Tweaks4Roothide's Repo
+Label: Tweaks4Roothide
 Suite: stable
 Version: 1.0
-Codename: tweaks4roothide
+Codename: Tweaks4Roothide
 Architecture: iphoneos-arm64e
 Components: main
-Description: tweaks4roothide's Tweaks
+Description: Tweaks4Roothide's Tweaks
 MD5Sum:
  e8c791f41801d62abcf2da50a8c2877c 8134 Packages
  acf7ebcb2750a5b010e48427dd639b6d 3191 Packages.bz2
