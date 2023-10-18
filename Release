@@ -5,7 +5,10 @@ Version: 1.0
 Codename: Tweaks4Roothide
 Architecture: iphoneos-arm64e
 Components: main
-Description: Tweaks4Roothide's Tweaks
+Description: Tweaks4Roothide's
+Icon: file://icon.png 
+
+Tweaks
 MD5Sum:
- 05d6c43d95f970dbfa63a0b75861bf46 12159 Packages
- a642ef6364c15416f6ccaa9359ad0673 4008 Packages.bz2
+ b9001fff28b49289565d0b2a4a55a181 17665 Packages
+ 9f697a563d2a5be3ba122a9aedfb51e6 5526 Packages.bz2
