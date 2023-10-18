@@ -6,7 +6,7 @@ Codename: Tweaks4Roothide
 Architecture: iphoneos-arm64e
 Components: main
 Description: Tweaks4Roothide's
-Icon: file://icon.png 
+Icon: file://CydiaIcon.png
 
 Tweaks
 MD5Sum:
