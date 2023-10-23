@@ -1,31 +1,31 @@
-Package: Flex3beta
-Version: 1:3~Beta56
+Package: alias20.bfdecryptor
+Version: 0.0.1
 Architecture: iphoneos-arm64e
-Maintainer: John Coates
-Depends: mobilesubstrate, firmware (>= 9.0)
-Conflicts: Flexpackage, Flexpackagebeta, com.fuyuchi.flex, Flex2packagebeta, Flex2package,  com.fuyuchi.flex2, Flex2Blackpackagebeta, com.johncoates.Flex3, Flex3FeatureCatalog
-Replaces: Flexpackage, Flexpackagebeta, com.fuyuchi.flex, Flex2packagebeta, Flex2package,  com.fuyuchi.flex2, Flex2Blackpackagebeta, com.johncoates.Flex3, Flex3FeatureCatalog
-Filename: ./debfiles/Flex3_dopamine.deb
-Size: 23135810
-MD5sum: cd061556c99138d0cd37b8d86c2cb8fd
-SHA1: fd3bd335f75dd566bbdbb5f51872fddb7b61ba5e
-SHA256: 616a00605b6aedf0bdb8fe7a7f0fdbe47fdef9325faa25b6e86dcb218241ce0f
+Maintainer: alias20
+Installed-Size: 568
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.opa334.altlist, preferenceloader
+Filename: ./debfiles/alias20.bfdecryptor-v0.0.1.deb
+Size: 93804
+MD5sum: c553f051b25d3aa13f5af72283968b36
+SHA1: 64824d7b4aee6bad9b259d20e9e86a02184783f1
+SHA256: 64d63ae6cabfc40ecaf883acdd50f8958d41a9307f53ab0632b850329f40746f
 Section: Tweaks
-Description: Develop your own tweaks and share them on the Flex Community Cloud
-Author: John Coates
-Name: Flex 3 Beta
-Recommended: com.rpetrich.rocketbootstrap
+Description: bfdecrypt for rootless/Ellekit
+Author: BishopFox
+Name: bfdecryptor
 
 Package: com.anthopak.addtofolder-rootless
 Version: 1.4
 Architecture: iphoneos-arm64e
 Maintainer: AnthoPak <anthopakdev@gmail.com>
+Pre-Depends: rootless-compat(>= 0.1)
 Depends: firmware (>=13.0), mobilesubstrate, ws.hbang.common (>= 1.14), firmware (>= 13.0)
 Filename: ./debfiles/com.anthopak.addtofolder-rootless-v1.4.deb
-Size: 122112
-MD5sum: 410d85b4eb43d8a86209b052dd3978e2
-SHA1: 35a056a0a1d6e8c488cde1141b71a54403abf91e
-SHA256: c0f3cec9498b045752d71c79a1a5b721876291e44d1c8dbedba41f7570d0f63a
+Size: 123810
+MD5sum: ee5ff5b6738c63096c90f5146f276b87
+SHA1: 4d87403ebd062f75723aefaa5a1b0f4d6f617dd2
+SHA256: 7a40df5b9ee448b697012742686faab9f0779a926bb240f2cbd6c4643e3e3992
 Section: Tweaks
 Homepage: https://repo.anthopak.dev
 Description: Easily move apps to your folders
@@ -36,37 +36,131 @@ Moderndepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.addtofo
 Name: AddToFolder (Rootless)
 Sileodepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.addtofolder-rootless.json
 
-Package: com.anthopak.quickprefs-rootless
-Version: 1.3.2
+Package: com.creaturecoding.libcspreferences
+Version: 1.5.8
 Architecture: iphoneos-arm64e
-Maintainer: AnthoPak <anthopakdev@gmail.com>
-Depends: firmware (>=11.0), mobilesubstrate, ws.hbang.common (>= 1.14), firmware (>= 11.0)
-Filename: ./debfiles/com.anthopak.quickprefs-rootless-v1.3.2.deb
-Size: 537562
-MD5sum: 82f1b8fddfe4d068f2e7e1ca38967c2b
-SHA1: b7a699187f57ea9e8ef8fb722382ceb857f9fb79
-SHA256: 21eb23ab28a5c06781ffe4e501df5817486cbb7892e7633147b9b276c9543381
+Maintainer: CreatureSurvive <support@creaturecoding.com>
+Installed-Size: 2332
+Pre-Depends: rootless-compat(>= 0.1), firmware (>= 8.0), com.ex.libsubstitute | mobilesubstrate
+Filename: ./debfiles/com.creaturecoding.libcspreferences-v1.5.8.deb
+Size: 977832
+MD5sum: 42748f742ff3c6f0d8e149bfc39c99bc
+SHA1: 22a057b23e023e0ba31ceb657479e2e7d6fe4c2d
+SHA256: 1bacea03c6f83bff6e8d560b75dd0742e8f8936e5e5c57e9385950efc0e61118
+Section: System
+Homepage: https://creaturecoding.com/
+Description: A Preference Library that doesn't suck!
+Tag: compatible_min::iOS9
+Author: CreatureSurvive <support@creaturecoding.com>
+Depiction: https://creaturecoding.com/?page=depiction&id=libcspreferences
+Name: libCSPreferences
+Sileodepiction: https://creaturecoding.com/sileo/depiction/?package_id=libcspreferences
+
+Package: com.creaturecoding.shuffle
+Version: 1.6.2
+Architecture: iphoneos-arm64e
+Maintainer: CreatureSurvive <support@creaturecoding.com>
+Installed-Size: 1484
+Pre-Depends: rootless-compat(>= 0.1), firmware (>= 8.0), com.ex.libsubstitute | org.coolstar.libhooker | mobilesubstrate
+Depends: com.creaturecoding.libcspreferences
+Conflicts: com.cpdigitaldarkroom.placeholder
+Replaces: com.cpdigitaldarkroom.placeholder
+Filename: ./debfiles/com.creaturecoding.shuffle-v1.6.2.deb
+Size: 319682
+MD5sum: 712d0c3e0419b0201649985770b216ca
+SHA1: f1be11f844d8a98302379536ec97e4cb85ffcb73
+SHA256: 05f7f276465adb83dececc12c0bb02578533dde085a06be9ca64158dd6d0a34b
 Section: Tweaks
-Homepage: https://repo.anthopak.dev
-Description: Quickly access settings prefs from 3D Touch Menu
-Author: AnthoPak <anthopakdev@gmail.com>
-Depiction: https://repo.anthopak.dev/depiction/web/com.anthopak.quickprefs-rootless.php
-Icon: https://repo.anthopak.dev/assets/com.anthopak.quickprefs-rootless/icon.png
-Moderndepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.quickprefs-rootless.json
-Name: QuickPrefs (Rootless)
-Sileodepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.quickprefs-rootless.json
+Homepage: https://creaturecoding.com/
+Description: Organize your settings
+Tag: purpose::extension, compatible_min::ios10
+Author: CreatureSurvive <support@creaturecoding.com>
+Depiction: https://creaturecoding.com/?page=depiction&id=shuffle
+Icon: file:///Library/PreferenceBundles/shuffle.bundle/SettingsIcon@3x.png
+Name: Shuffle
+Sileodepiction: https://creaturecoding.com/sileo/depiction/?package_id=shuffle
+
+Package: com.exile90.icleanerpro
+Version: 7.10.0
+Architecture: iphoneos-arm64e
+Maintainer: Ivano Bilenchi <support@ib-soft.net>
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>= 4.0), findutils, apt | apt7
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: ./debfiles/com.exile90.icleanerpro-v7.10.0.deb
+Size: 2752384
+MD5sum: c9e3509c2856eccc14cd4bf12c9087a0
+SHA1: 3942439a70982034469bc16fca55082cb3d84a86
+SHA256: 609d6184c5f6fcd89c04424a389f6f51e9fbb56d46da4969affffa4be61ec22b
+Section: Utilities
+Homepage: http://ib-soft.net/icleaner
+Description: The first real iOS system cleanup and management utility
+Author: Ivano Bilenchi <support@ib-soft.net>
+Depiction: http://ib-soft.net/depictions/?pkgId=com.exile90.icleanerpro
+Icon: file:///Applications/iCleaner.app/Icon.png
+Name: iCleaner Pro
+
+Package: com.ichitaso.powerselector11
+Version: 1.3.9
+Architecture: iphoneos-arm64e
+Maintainer: ichitaso <willfeeltips+ps11@gmail.com>
+Installed-Size: 2212
+Pre-Depends: rootless-compat(>= 0.1), firmware (>= 11.0)
+Depends: mobilesubstrate, preferenceloader, com.opa334.ccsupport
+Conflicts: com.ichitaso.powerselector, com.dpkgdan.powertap, com.weesstt.powerdownoptions, com.subdiox.powertap2, com.rustybalboa.powertapxi
+Replaces: com.ichitaso.powerselector11
+Filename: ./debfiles/com.ichitaso.powerselector11-v1.3.9.deb
+Size: 423258
+MD5sum: 7d8711b99d5394c6657b3f917faccca4
+SHA1: bc255c95328d1c1ed0fd4fb6ac992014aa0b2f3c
+SHA256: dad50de4479a919af5a8b6ae38e2da753fe55d7f9f535971e6d5cac38f9eaea1
+Section: Utilities
+Homepage: https://cydia.ichitaso.com/depiction/powerselector11.html
+Description: The power supply relation of a device is operated.
+Tag: purpose::extension, compatible_min::ios11.0, compatible_max::ios16.3
+Author: ichitaso <willfeeltips+ps11@gmail.com>
+Depiction: https://cydia.ichitaso.com/depiction/powerselector11.html
+Dev: ichitaso
+Icon: https://cydia.ichitaso.com/icons/PowerSelector.png
+Name: PowerSelector
+
+Package: com.ichitaso.primalfolder2
+Version: 0.1.1
+Architecture: iphoneos-arm64e
+Maintainer: ichitaso
+Installed-Size: 464
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader
+Conflicts: com.ichitaso.primalfolder, me.qusic.taptapfolder, com.lizynz.folder6plus, info.rpdev.betterfourbyyfourfolders
+Replaces: com.ichitaso.primalfolder2
+Filename: ./debfiles/com.ichitaso.primalfolder2-v0.1.1.deb
+Size: 58970
+MD5sum: 46e0b5941eac87601b2e7b1ef2d3d128
+SHA1: cb961df80affe97f0976f29ff02bc9a58d6a9bd6
+SHA256: a19924aac8f1311deac8b6f8aca027014dffac01df583df152f8038366a092aa
+Section: Tweaks
+Homepage: https://ichitaso.com
+Description: Display to folder as icon and launch action for Folders
+Tag: purpose::extension, compatible_min::ios13.0, compatible_max::ios16.4
+Author: ichitaso
+Depiction: https://cydia.ichitaso.com/depiction/primalfolder2.html
+Dev: ichitaso
+Icon: https://cydia.ichitaso.com/icons/PrimalFolder2.png
+Name: PrimalFolder 2
 
 Package: com.ioscreatix.sugarcane
 Version: 1.2.4.2
 Architecture: iphoneos-arm64e
 Maintainer: iOS Creatix, kasiimh1, baptistecdr, p2kdev
 Installed-Size: 156
+Pre-Depends: rootless-compat(>= 0.1)
 Depends: mobilesubstrate,firmware (>= 13.0)
 Filename: ./debfiles/com.ioscreatix.sugarcane-v1.2.4.2.deb
-Size: 9366
-MD5sum: 2fb941fd9dbf1f569405b9accf1725ec
-SHA1: 19c9dee7c69b6961ae275812af40387d81f4c8e9
-SHA256: bcdd1a51db050c3fdf33685c5e051cce3fbe4770f946e543b8a0432325152d82
+Size: 10304
+MD5sum: 54cded4b4f63b93a3935496750f2cd47
+SHA1: f6484ec2552ce142320cf147d5576f666df155a1
+SHA256: 68342ddaf884793d3451385f5779be8f9eae61572f1b5658f603edaae6664f08
 Section: Tweaks
 Description: Get percentages for the sliders in the Control Center 13 and 14
 Author: iOS Creatix, kasiimh1, p2kdev
@@ -75,181 +169,72 @@ Icon: https://p2kdev.github.io/repo/api/packageinfo/com.ioscreatix.sugarcane/ico
 Name: SugarCane 13/14
 Sileodepiction: https://p2kdev.github.io/repo/depictions/native/com.ioscreatix.sugarcane.json
 
-Package: com.itznebbs.edge2
-Version: 1.0.3
+Package: com.jschiefner.advancedbrightnessslider
+Version: 1.2.1
 Architecture: iphoneos-arm64e
-Maintainer: Nebbs
-Installed-Size: 560
-Depends: firmware (>=15.0), com.itznebbs.phoenix (>=1.0.4)
-Conflicts: com.junesiphone.lockpluspro
-Replaces: io.securarepo.edge
-Filename: ./debfiles/com.itznebbs.edge2-v1.0.3.deb
-Size: 203418
-MD5sum: cb88324371a3f4c4348d80f3cb328221
-SHA1: f140139949b33414f2248dc052a96aae20351912
-SHA256: 5a57ee3f0889f6a3d0a3d731b197d849ef789a6575926168979c0e85b75e51c0
+Maintainer: Jonas Schiefner
+Installed-Size: 384
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate (>= 0.9.5000), ws.hbang.common (>= 1.17)
+Filename: ./debfiles/com.jschiefner.advancedbrightnessslider-v1.2.1.deb
+Size: 41626
+MD5sum: 3efe0c4bda48e102d17c46064dfca8f3
+SHA1: 045919d7fb7728575ddb35c6321f0b65d9913bc4
+SHA256: aa4f182151275a74b30d66680f91cdc919746a426329ea6e8795430ed127bbea
 Section: Tweaks
-Description: Color your device in a beautiful and elegant way!
-Author: Nebbs + Max Bridgland
-Name: Edge 2
-
-Package: com.itznebbs.phoenix
-Version: 1.0.4
-Architecture: iphoneos-arm64e
-Maintainer: Nebbs
-Installed-Size: 404
-Depends: firmware (>=15.0)
-Filename: ./debfiles/com.itznebbs.phoenix-v1.0.4.deb
-Size: 68362
-MD5sum: 978dcc44fef5a8da70e93db6b17dec50
-SHA1: f2cee17bab2c1cf4f3451fe5bb966623fa6e7c25
-SHA256: f533b6ae1c1ab369d73d42801c7e48a01d65ed72a79096521c29f38ae0de3cb7
-Section: Development
-Description: Collection of classes used in my tweaks.
-Author: Nebbs
-Name: Phoenix
-
-Package: com.julioverne.goodwifi
-Version: 0.0~beta6
-Architecture: iphoneos-arm64e
-Maintainer: Julio
-Installed-Size: 412
-Depends: mobilesubstrate, preferenceloader
-Filename: ./debfiles/com.julioverne.goodwifi-v0.0~beta6.deb
-Size: 49846
-MD5sum: d45b5c9c16ba3db3b96327ee3f08516f
-SHA1: d5af2d3c60d9c69459f3e34227f72ea4f4851f22
-SHA256: c741a47ae1d37ebeee5bda34619bf5b0c4485485c0b948808a56755ae370989d
-Section: Tweaks
-Homepage: https://twitter.com/ijulioverne
-Description: Better WiFi Preferences
-Author: julioverne
-Depiction: https://julioverne.github.io/description.html?id=com.julioverne.goodwifi
-Icon: file:///var/jb/Library/PreferenceBundles/GoodWiFiSettings.bundle/icon@2x.png
-Name: GoodWiFi
-
-Package: com.lenglengyu.storeswitcher2-rootless
-Version: 1.0.2
-Architecture: iphoneos-arm64e
-Maintainer: subdiox
-Installed-Size: 424
-Depends: firmware (>= 15), mobilesubstrate
-Filename: ./debfiles/com.lenglengyu.storeswitcher2-rootless-v1.0.2-1.deb
-Size: 100486
-MD5sum: 18fbbcbc9e7344f48eafec34eeddc7e8
-SHA1: d15e9c7fb47f52813e8edd7d2d430bfc1c5330fa
-SHA256: 9aa511f7bd33ffde57df47f7be4f6f92be0619cdaa52b229c223fc6f86eed550
-Section: Tweaks
-Description: App Store帐户页面中快速切换账号。
-Author: subdiox
-Depiction: https://repo.lenglengyu.top/packageInfo/storeswitcher2-rootless.html
-Name: StoreSwitcher-Rootless账号切换
-Sileodepiction: https://repo.lenglengyu.top/packageInfo/storeswitcher2-rootlesssileo
-
-Package: com.level3tjg.10passcode
-Version: 1.0
-Architecture: iphoneos-arm64e
-Maintainer: level3tjg
-Installed-Size: 152
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 11.0)
-Filename: ./debfiles/com.level3tjg.10passcode-v1.0.deb
-Size: 6828
-MD5sum: 615cae7cedc48890c36b3f8d79a185d1
-SHA1: 2861453534205595096750d38ded78ff05415dab
-SHA256: 293c2c421f772dfa397655c4b110b5ccb0e52685fe36ee5a7d738640709849bf
-Section: Tweaks
-Description: iOS 10 style passcode keypad for iOS 11+
-Author: level3tjg
-Depiction: https://level3tjg.me/repo/depictions/?p=com.level3tjg.10passcode
-Name: 10Passcode
+Description: Tweak to dim the screen even further with the brightness slider in Control Center
+Author: Jonas Schiefner
+Name: AdvancedBrightnessSlider
 
 Package: com.mtac.ampere
 Version: 1.2
 Architecture: iphoneos-arm64e
 Maintainer: MTAC
 Installed-Size: 604
+Pre-Depends: rootless-compat(>= 0.1)
 Depends: mobilesubstrate, firmware (>= 14.0), preferenceloader
 Filename: ./debfiles/com.mtac.ampere-v1.2.deb
-Size: 121546
-MD5sum: 4d5e8e8a70a78f252344b7a7fed24a70
-SHA1: 21fb845d6146e42490ee47b6df8473c9aec6da7d
-SHA256: 8e18cca51d235f375646379005b4e2129eca5242e1223b52e676ef14c9896ab4
+Size: 125390
+MD5sum: 00b1472aba49ddacad0bb5176b5465b0
+SHA1: 0423866d17e2e9dd399bef1b3045a8c02f005e31
+SHA256: 661e63f6646a4ea7ee9763bf2a3135e5caa899b31fd44f11172a84abdfd43fef
 Section: Tweaks
 Description: iOS 16 Style Battery Indicator
 Author: MTAC
 Name: Ampere
 
-Package: com.nahtedetihw.centeredlabels-rootless
-Version: 1.3
+Package: com.mtac.lynxapp
+Version: 2.1
 Architecture: iphoneos-arm64e
-Maintainer: ETHN <ethanwhited2208@gmail.com>
-Filename: ./debfiles/com.nahtedetihw.centeredlabels-rootless-v1.3.deb
-Size: 12954
-MD5sum: 640f624f5b684c5df8c8a7407d01a067
-SHA1: f80fdc540fbb678ec4680628e76375c438a199d2
-SHA256: 74b3d4044d9478ed9b358ef22a2bfb34d19be808eb57809ffc8853878dac47c8
-Section: Tweaks
-Homepage: https://nahtedetihw.github.io
-Description: Center all labels in main Settings page.
-Tag: role::enduser
-Author: ETHN <ethanwhited2208@gmail.com>
-Depiction: https://nahtedetihw.github.io/depiction/web/com.nahtedetihw.centeredlabels-rootless.html
-Icon: https://nahtedetihw.github.io/assets/com.nahtedetihw.centeredlabels-rootless/icon.png
-Moderndepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.centeredlabels-rootless.json
-Name: CenteredLabels-Rootless
-Sileodepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.centeredlabels-rootless.json
-Someotherentrytocontrol: True
-Tags: compatible_min::ios13.0, compatible_max::ios16.4
-
-Package: com.nahtedetihw.closeall
-Version: 1.0
-Architecture: iphoneos-arm64e
-Maintainer: Ethan Whited
-Installed-Size: 208
-Filename: ./debfiles/com.nahtedetihw.closeall-v1.0.deb
-Size: 27922
-MD5sum: 1a0abab997e08e588d26ef2598ac95a7
-SHA1: cbdd32ae09690405941082abdaef83bb93000e32
-SHA256: 41a882599607738d1fa80feea21eab617b8ada2484051c6fa587ea2851c80561
-Section: Tweaks
-Description: An awesome MobileSubstrate tweak!
-Author: Ethan Whited
-Name: CloseAll
-
-Package: com.nahtedetihw.reachplayer-rootless
-Version: 2.6
-Architecture: iphoneos-arm64e
-Maintainer: ETHN <ethanwhited2208@gmail.com>
-Depends: firmware (>=13.0), mobilesubstrate
-Filename: ./debfiles/com.nahtedetihw.reachplayer-rootless-v2.6.deb
-Size: 134628
-MD5sum: e09ccc2b984e7b40a7fc7e5069cf1581
-SHA1: e9db2fb90d8df27253d4721c26bf17e03e2bda0d
-SHA256: 92cd125efb394140d4b558bf05c6e804764d7a9decae21d30383e2f3abd27402
-Section: Tweaks
-Homepage: https://nahtedetihw.github.io
-Description: Now Playing info in Reachability Window!
-Tag: role::enduser
-Author: ETHN <ethanwhited2208@gmail.com>
-Depiction: https://nahtedetihw.github.io/depiction/web/com.nahtedetihw.reachplayer-rootless.html
-Icon: https://nahtedetihw.github.io/assets/com.nahtedetihw.reachplayer-rootless/icon.png
-Moderndepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.reachplayer-rootless.json
-Name: ReachPlayer-Rootless
-Sileodepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.reachplayer-rootless.json
-Someotherentrytocontrol: True
-Tags: compatible_min::ios13.0, compatible_max::ios16.4
+Maintainer: MTAC
+Installed-Size: 804
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: com.mtac.lynxtwo
+Filename: ./debfiles/com.mtac.lynxapp-v2.1.deb
+Size: 558750
+MD5sum: 28b76dd9b1a22a2e4411a8765a259c39
+SHA1: c6257aeb8cebc24a8ae81a8eacf3055e504a59f1
+SHA256: e61d2cdb980238bdfd48c2e7a3cfda9a15ac9ad804a3c32169de3b10160d5d3f
+Section: Utilities
+Description: Homescreen Application for Lynx
+Author: MTAC
+Depiction: https://mtac.app/repo/depiction/web/com.mtac.lynxapp.html
+Icon: file:///Applications/Lynx.app/icon.png
+Name: Lynx Application
+Sileodepiction: https://mtac.app/repo/depiction/native/com.mtac.lynxapp.json
 
 Package: com.p2kdev.deleteforeverxs
 Version: 1.1
 Architecture: iphoneos-arm64e
 Maintainer: P2KDev <p2kdev@gmail.com>
 Installed-Size: 156
+Pre-Depends: rootless-compat(>= 0.1)
 Depends: mobilesubstrate
 Filename: ./debfiles/com.p2kdev.deleteforeverxs-v1.1.deb
-Size: 7688
-MD5sum: e85ab22b22d569c2d7b4ef193ea6a0f6
-SHA1: 9e16f358820a781b41ff49d2b112d9f41cf0bfd6
-SHA256: edb66bc87d7df6298971a611084f7ad6190f7e9fe6f28867aaf787001e545d6b
+Size: 9106
+MD5sum: 61abd1d57b1584e1a5b7f94a9bc978b6
+SHA1: 88e0a74c9f72d6004b6f9b3e7f24156bc5c69e24
+SHA256: 492d6db67b6db0e43e683745305d8966b42dee7f1ea4f1005955b32dd18504f8
 Section: Tweaks
 Description: Delete Media with moving to Recently Deleted!
 Author: P2KDev <p2kdev@gmail.com>
@@ -258,179 +243,535 @@ Icon: https://p2kdev.github.io/repo/api/packageinfo/com.p2kdev.deleteforeverxs/i
 Name: DeleteForeverXS
 Sileodepiction: https://p2kdev.github.io/repo/depictions/native/com.p2kdev.deleteforeverxs.json
 
-Package: com.p2kdev.quitall
-Version: 1.2.1.1
+Package: com.p2kdev.ringpercentlabel
+Version: 1.0.5
 Architecture: iphoneos-arm64e
 Maintainer: P2KDev <p2kdev@gmail.com>
-Installed-Size: 428
-Depends: mobilesubstrate
-Filename: ./debfiles/com.p2kdev.quitall-v1.2.1.1.deb
-Size: 34190
-MD5sum: 9f116ac1b3352d218e3cc068d7dc636e
-SHA1: 187d1af9b5b76147b960a6abb6fb858549d54797
-SHA256: c2736439baa4596103e292865fb020395c65755cca35484366d378e6646cea5a
+Installed-Size: 152
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>= 14.0),mobilesubstrate
+Filename: ./debfiles/com.p2kdev.ringpercentlabel-v1.0.5-1.deb
+Size: 8824
+MD5sum: 0c8d9fb0b7a93f8d38ba76a99ce09e65
+SHA1: e54b44ce5d5b2fe6ca548539ad27de467f0b67a1
+SHA256: 97b87083b533f0b3a12a9bdb2c5fb7baf35412e5cb69ef4824a80e07bfc9bef8
 Section: Tweaks
-Description: Swipe down on app switcher card to kill all apps!
+Description: Percent Labels for the Battery Widget Rings!
 Author: P2KDev <p2kdev@gmail.com>
-Depiction: https://p2kdev.github.io/repo/depictions/index.html?packageId=com.p2kdev.quitall
-Icon: https://p2kdev.github.io/repo/api/packageinfo/com.p2kdev.quitall/icon.png
-Name: QuitAll
-Sileodepiction: https://p2kdev.github.io/repo/depictions/native/com.p2kdev.quitall.json
+Depiction: https://p2kdev.github.io/repo/depictions/index.html?packageId=com.p2kdev.ringpercentlabel
+Icon: https://p2kdev.github.io/repo/api/packageinfo/com.p2kdev.ringpercentlabel/icon.png
+Name: RingPercentLabel
+Sileodepiction: https://p2kdev.github.io/repo/depictions/native/com.p2kdev.ringpercentlabel.json
+
+Package: com.pantsthief.flexing
+Version: 1.5.0
+Architecture: iphoneos-arm64e
+Maintainer: Tanner Bennett <thepantsthief@me.com>
+Installed-Size: 168
+Pre-Depends: rootless-compat(>= 0.1), firmware (>= 8.0)
+Depends: libflex
+Conflicts: com.dgh0st.flexall, gg.gh0stbyte.flexivator, com.shmoopillic.flexible, applebetas.ios.tweak.devtools.flexgesture, com.creaturecoding.flexer, com.lacertosusrepo.flex4me, me.nepeta.flexxx, com.ipadkid.flexit, com.qiop1379.flexbar, com.leftyfl1p.reflex
+Filename: ./debfiles/com.pantsthief.flexing-v1.5.0.deb
+Size: 10524
+MD5sum: 65faffcde4aea0c38a84ea84fd50afc6
+SHA1: 52b2ffa054c53fbfa5e9453e7b79dd2aa9d31a4a
+SHA256: cd1e86d9fb73709c2a885b0a95a5f6f263c1c525795f87f45a16b32cdc219bf3
+Section: Tweaks
+Description: Open FLEX anywhere!
+Author: Tanner Bennett <thepantsthief@me.com>
+Depiction: https://nscake.github.io/package.html?package=com.pantsthief.flexing
+Name: FLEXing
+Sileodepiction: https://nscake.github.io/depictions/com.pantsthief.flexing.sileo.json
+
+Package: com.peterdev.half
+Version: 1.0.3
+Architecture: iphoneos-arm64e
+Maintainer: Soongyu Kwon
+Installed-Size: 168
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate
+Filename: ./debfiles/com.peterdev.half-v1.0.3.deb
+Size: 10920
+MD5sum: e631708a4263d1a0ad1e8ecf13b74c1f
+SHA1: 97a1437811ab74a57dc5d6d5ff71dd62fa2857bb
+SHA256: f748c4d70ee1809cd6590410e525efd0e6d1b4e4213037b508673586da03aca1
+Section: Tweaks
+Description: Fancy iOS Battery Indicator for iOS 11+
+Author: Soongyu Kwon & Ayden Leppert
+Name: half
+
+Package: com.rpgfarm.a-font
+Version: 1.9.3-2
+Architecture: iphoneos-arm64e
+Maintainer: Baw Appie <pp121324@gmail.com>
+Installed-Size: 2476
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.opa334.altlist, preferenceloader
+Filename: ./debfiles/com.rpgfarm.a-font-v1.9.3-2.deb
+Size: 1342126
+MD5sum: 55e8f54f1f8309a318cce2c0b204da6a
+SHA1: 20f2c06aba9b27c4b02176eb3be26a7e12e5617d
+SHA256: 0fd601574b25ac7431bdbfb0413155c404690c5816d731c806b90bd5cf9a0a76
+Section: Tweaks
+Description: Change your font!
+Author: Baw Appie <pp121324@gmail.com>
+Name: A-Font
 
 Package: com.shepgoba.downloadbar13
 Version: 1.0.2
 Architecture: iphoneos-arm64e
 Maintainer: alias20
 Installed-Size: 168
+Pre-Depends: rootless-compat(>= 0.1)
 Depends: mobilesubstrate
 Filename: ./debfiles/com.shepgoba.downloadbar13-v1.0.2.deb
-Size: 6490
-MD5sum: 97cf407c739279eee5107e7699a34166
-SHA1: 51b245a0d11bc5bda3fe6b552fdc097d670e19d9
-SHA256: 5822093a1a3cba04050539a9e57d865981e520485542178ed28a6e64196197f2
+Size: 7248
+MD5sum: a2f9eba0d925e620d233f553706019a5
+SHA1: 7a83f87d5a8fd7bb7cd98e4911978b1a8de3776f
+SHA256: f1c0d589ea78e02ecd668ca4d450048dcb88b2c37bb1ce38110c039879e92e26
 Section: Tweaks
 Description: Show a progress bar for downloading apps instead! Confirmed worked on iOS 15/rootless.
 Author: shepgoba
 Name: DownloadBar13
 
-Package: com.tomaszpoliszuk.colorpickerwell
-Version: 1.0.0
+Package: com.skypain.kayoko
+Version: 1.4.1-1
 Architecture: iphoneos-arm64e
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Installed-Size: 198
-Depends: firmware (>= 9.0), org.thebigboss.libcolorpicker | firmware (>= 14.0)
-Filename: ./debfiles/com.tomaszpoliszuk.colorpickerwell-v1.0.0.deb
-Size: 37398
-MD5sum: ae67c20a1a71202d2ef437290549e5db
-SHA1: 94471edef5bcb8d42443f8054b5c39776539893d
-SHA256: f65fe304fde4596a9085c9006925675acc4b44c87fe3a036e8a1aa38b573ea11
-Section: Development
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=colorpickerwellDp
-Description: Color picker framework for developers
+Maintainer: Mr.Zhang <mr_zhang_00@163.com>
+Installed-Size: 1084
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader, com.opa334.libsandy
+Conflicts: dev.traurige.kayoko
+Filename: ./debfiles/com.skypain.kayoko-v1.4.1-1-1.deb
+Size: 166686
+MD5sum: 2681c2caf70a6cb5b29e633697cfc5c2
+SHA1: 6542d72c760e1e332067dd065e92e18f7f84918e
+SHA256: 40e93d866e0aa0ba9c1a46ab9387390c457df52d57ac0b013af915ffd49336cd
+Section: Tweaks
+Homepage: https://skypain.github.io/repo/
+Description: kayoko魔改版 基于Traurige和Lessica的开源项目合并支持Rootless 简体中文来自叨叨源
+Author: Traurige&Lessica
+Depiction: https://skypain.github.io/repo/static/view/?p=kayoko
+Icon: https://skypain.github.io/repo/src/kayoko/Icon.png
+Name: Kayoko
+Sileodepiction: https://skypain.github.io/repo/src/kayoko/config/sileo/depiction.json
+
+Package: com.spark.autounlockx
+Version: 1.1.0-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 416
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debfiles/com.spark.autounlockx-v1.1.0-rootless.deb
+Size: 70384
+MD5sum: 98c67dbbf6a2be75d942668b6c166cd4
+SHA1: 536b91f7ec94c26b6b1debb5301d5a2ab8ba3158
+SHA256: 464866f2ecfae7238778cedea1f2b7595a6a88b9fca7404654463160a0f2c933
+Section: Tweaks
+Description: Unless there are notifications, the device will automatically unlock when valid Face ID is detected
+Author: Spark
+Name: AutoUnlockX
+
+Package: com.spark.juice
+Version: 1.2.0~Rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 4612
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, preferenceloader, com.spark.libsparkcolourpicker, com.spark.libsparkmessage
+Conflicts: com.fortysixandtwo.alkaline, com.spark.juicelite
+Replaces: com.fortysixandtwo.alkaline, com.spark.juicelite
+Provides: com.fortysixandtwo.alkaline
+Filename: ./debfiles/com.spark.juice-v1.2.0~Rootless.deb
+Size: 2474878
+MD5sum: 48f0252cceb8e83425aa1994b6452d41
+SHA1: 86608b9c640226ae317c03aceee84bd6499d1e2b
+SHA256: 4093581120577f91d321860432b05d2b052ec821977346699361a45d0d0d1b72
+Section: Tweaks
+Description: Show your juice in style!
+Author: Spark
+Name: Juice
+
+Package: com.spark.juicestylepack1
+Version: 1.0.2-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 684
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: com.spark.juice
+Filename: ./debfiles/com.spark.juicestylepack1-v1.0.2-rootless.deb
+Size: 387686
+MD5sum: 98006b8c4bc57e096f741dc3614c7293
+SHA1: 30d2dd8bf630b88140c4da95d3ec04664d1411de
+SHA256: 2f9418d4d3a72d0e50072bb2c2f77ac01c2e442d20681d458d6114009ef3e78f
+Section: Tweaks
+Description: Juice Community Style Pack 1
+Author: Spark
+Name: Juice Community Style Pack 1
+
+Package: com.spark.libsparkapplist
+Version: 1.1.0~rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 408
+Pre-Depends: rootless-compat(>= 0.1)
+Filename: ./debfiles/com.spark.libsparkapplist-v1.1.0~rootless.deb
+Size: 32252
+MD5sum: 76e5430ed140ccde04547c09594fa821
+SHA1: 188feee3c580560cfcf1e38f07262a15de561f99
+SHA256: e28f41d441d07b5d50e45aa922bcdd3abe0f96c86c1336eac990e6f0a22c8544
+Section: System
+Description: AppList alternative
 Tag: role::developer
-Author: Tomasz Poliszuk <tomaszpoliszuk+bigboss@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=colorpickerwellDp
-Dev: tomaszpoliszuk
-Name: Color Picker Well
-Sponsor: thebigboss.org <http://thebigboss.org>
+Author: Spark
+Name: libSparkAppList
 
-Package: com.tomaszpoliszuk.dockcontroller
-Version: 2.1
+Package: com.spark.libsparkcolourpicker
+Version: 1.0.3-rootless
 Architecture: iphoneos-arm64e
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Installed-Size: 409
-Depends: firmware (>= 11.0), mobilesubstrate, preferenceloader, com.tomaszpoliszuk.colorpickerwell, com.chpwn.iconsupport | firmware (>= 13.0)
-Filename: ./debfiles/com.tomaszpoliszuk.dockcontroller-v2.1.deb
-Size: 69630
-MD5sum: 3609165fa4fdf2229fa0e26ebe8d62b8
-SHA1: e4860fd343e38ec3f8de42e4feb1f78c5654dc6a
-SHA256: 4400b27a90b009705bf90355e7f85165c2f63729ab6ebe9783b307579c6745e2
-Section: Tweaks
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=dockcontrollerDp
-Description: Control Your Dock
-Tag: purpose::extension
-Author: Tomasz Poliszuk <tomaszpoliszuk+bigboss@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=dockcontrollerDp
-Dev: tomaszpoliszuk
-Icon: file:///Library/PreferenceBundles/DockControllerSettings.bundle/icons/DockController@3x.png
-Name: Dock Controller
-Sponsor: thebigboss.org <http://thebigboss.org>
+Maintainer: Spark
+Installed-Size: 424
+Pre-Depends: rootless-compat(>= 0.1)
+Filename: ./debfiles/com.spark.libsparkcolourpicker-v1.0.3-rootless.deb
+Size: 95996
+MD5sum: 92ac305bad5774fcc45bc4c5adc56b13
+SHA1: f98b97ad42fea437d3d54d2e8ad9f2b3295971bf
+SHA256: 6db5f09e4643d80f034e0604a7c42c1708b26a147234f66cdbe2203d6e7a2721
+Section: System
+Description: Simple to implement, simple to use colour picker library. Built by SparkDev.
+Tag: role::developer
+Author: Spark
+Name: libsparkcolourpicker
 
-Package: me.lau.atria
-Version: 1.4.1
+Package: com.spark.libsparkmessage
+Version: 1.1.0~rootless
 Architecture: iphoneos-arm64e
-Maintainer: ren7995 <lau7995ren@gmail.com>
-Installed-Size: 886
-Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader, ws.hbang.alderis (>= 1.1)
-Conflicts: com.irepo.boxy4, me.kritanta.homepluspro
-Filename: ./debfiles/me.lau.atria-v1.4.1.deb
-Size: 267260
-MD5sum: b8a3e9ca0280176da496a5d51e4469f4
-SHA1: 1a3cba85e894f8fd76a87c64be39d154cc27270c
-SHA256: feee9afc1be4eff687dc9c11edd2fe8395358eb6d3fa8f0ac3623339932fcd08
+Maintainer: Spark
+Installed-Size: 200
+Pre-Depends: rootless-compat(>= 0.1)
+Filename: ./debfiles/com.spark.libsparkmessage-v1.1.0~rootless.deb
+Size: 10396
+MD5sum: d44b8d8c3dc6dae7a8410e26b9bcb466
+SHA1: 7aa7018d52ea66f3dc8aa6002c63e3c7218b4ecb
+SHA256: 71d6cf32122a516b53d147e3b993389ab41b293c5ada8037461af586f17ee871
+Section: System
+Description: Super lightweight IPC messaging library
+Tag: role::developer
+Author: Spark
+Name: libSparkMessage
+
+Package: com.spark.snowboard
+Version: 1.5.21-Beta3-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 3188
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, preferenceloader
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Filename: ./debfiles/com.spark.snowboard-v1.5.21-Beta3-rootless.deb
+Size: 2536108
+MD5sum: e4d263a8c1246c98eebd5d006a9fc3be
+SHA1: 4f51a5145634b0e019a4b2fbdf941b6c13025186
+SHA256: 7d1d3db96ddd099751c49086efcc786c3da0f40b3250e2a2dacd018d16ffb622
 Section: Tweaks
-Description: A proper homescreen layout editor for iOS 13-16
-Tag: compatible_min::ios13.0
-Author: ren7995 <lau7995ren@gmail.com>
-Depiction: https://chariz.com/get/atria
-Icon: https://img.chariz.cloud/icon/atria/icon@3x.png
-Name: Atria
+Description: Snowboard theming engine
+Author: Spark & Dennis D. Bednarz
+Name: SnowBoard
+
+Package: com.spark.snowboard.dock
+Version: 1.1.3~Beta4-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 440
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Filename: ./debfiles/com.spark.snowboard.dock-v1.1.3~Beta4-rootless.deb
+Size: 42554
+MD5sum: b7c9553a3eeaacabfb93df8979f9f956
+SHA1: 4c0c0322e8c6c5d5c3540c6f6d05d0492a330f70
+SHA256: 7e7d0e0b6488ae4a7508df59ca8cb31087f5ab42d9b3661957e60e980d7b256c
+Section: SnowBoard Extensions
+Description: Dock for SnowBoard
+Author: Spark
+Name: SnowBoard Dock Extension
+
+Package: com.spark.snowboard.effects
+Version: 1.2.2-Beta2-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 412
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Filename: ./debfiles/com.spark.snowboard.effects-v1.2.2-Beta2-rootless.deb
+Size: 44210
+MD5sum: 36778bfaa150a14038bf34745250aecb
+SHA1: 051da3c6e42f618521073610bf67c0c16adefbc9
+SHA256: 27dd920d44451bbce640f30f7a607d253e2931865ed2de7518dab9f9f234b5c4
+Section: SnowBoard Extensions
+Description: Icon Effects for SnowBoard
+Author: Spark
+Name: SnowBoard Icon Effects Extension
+
+Package: com.spark.snowboard.fonts
+Version: 1.1.0~Beta4-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 392
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Conflicts: com.ipr.bytafont, com.bytafont.bytafont3
+Replaces: com.ipr.bytafont, com.bytafont.bytafont3
+Provides: com.ipr.bytafont, com.bytafont.bytafont3
+Filename: ./debfiles/com.spark.snowboard.fonts-v1.1.0~Beta4-rootless.deb
+Size: 25986
+MD5sum: 882d3d9a72c3fb7b1039096e1c129e5b
+SHA1: e92d2b5480a73e2212c373d0eabaddc8436052f6
+SHA256: 4f96c7203728691ed8e8e117d3d254460a5e9e1e3ad15a07176e5a2e2dd71804
+Section: SnowBoard Extensions
+Description: Fonts for SnowBoard
+Author: Spark
+Name: SnowBoard Fonts Extension
+
+Package: com.spark.snowboard.labels
+Version: 1.1.1~Beta4-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 432
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Filename: ./debfiles/com.spark.snowboard.labels-v1.1.1~Beta4-rootless.deb
+Size: 32316
+MD5sum: 01c947f98c243aa5ac7c8fb9d3db3df1
+SHA1: d2edf5c1386d3b5230655d8636f92dcc65f79856
+SHA256: 57c06a137a6b826b245b314c44d461a0591b42c302736c8bd146ca322c37eb33
+Section: SnowBoard Extensions
+Description: Labels for SnowBoard
+Author: Spark
+Name: SnowBoard Labels Extension
+
+Package: com.spark.snowboard.masks
+Version: 1.2.2-Beta2-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 340
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Filename: ./debfiles/com.spark.snowboard.masks-v1.2.2-Beta2-rootless.deb
+Size: 24390
+MD5sum: c20766adcd7c7a4f7b2c0c291293f963
+SHA1: 1cc14b7292b7f88a49e6ff1df470ee37f6d5b09b
+SHA256: bf9d8d22d2b1c106ea0e5dbc0449ef7d766159f8e8b9abef002beafe8091b48d
+Section: SnowBoard Extensions
+Description: Icon masks for SnowBoard
+Author: Spark
+Name: SnowBoard Icon Masks Extension
+
+Package: com.spark.snowboard.presetextension
+Version: 1.1.0~Beta4-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 488
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.spark.snowboard (>> 1.2.22)
+Filename: ./debfiles/com.spark.snowboard.presetextension-v1.1.0~Beta4-rootless.deb
+Size: 55896
+MD5sum: dee04a7f8f6a6f84964addedd3a3481b
+SHA1: 48a0bb87f52a9ddceba7f88874dd1f84060be589
+SHA256: 1d0cabe170dca5e7ec335cc64fc845d769c723f041005e9a08f2e7ce5bde5364
+Section: SnowBoard Extensions
+Description: SnowBoard Presets Extension
+Author: Spark
+Name: SnowBoard Preset Extension
+
+Package: com.spark.snowboard.settingsicons
+Version: 1.0.26~Beta3-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 340
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Filename: ./debfiles/com.spark.snowboard.settingsicons-v1.0.26~Beta3-rootless.deb
+Size: 22852
+MD5sum: 0e07ad1f7b5867529f26fb21ae5f8a85
+SHA1: e53beb70db74a0c409be4b1fd1c497276fffac25
+SHA256: 39235f386244207a7ce0d31ee50123d73b6628e9ddbc2fb2fc3c645cdd0a5e8b
+Section: SnowBoard Extensions
+Description: Settings Icons for SnowBoard
+Author: Spark
+Name: SnowBoard Settings Icons Extension
+
+Package: com.spark.snowboard.statusbar
+Version: 1.1.0-Beta4-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 364
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Filename: ./debfiles/com.spark.snowboard.statusbar-v1.1.0-Beta4-rootless.deb
+Size: 34930
+MD5sum: ee59570a574668b021da4c583af44861
+SHA1: 5c01a5daa2a26b22af8cf784e484d47654acb2c0
+SHA256: 0a5e9476f6d87d33dca287872b55b043d4c45464c74d8b6ee6f1b873b20f1976
+Section: SnowBoard Extensions
+Description: StatusBar for SnowBoard
+Author: Spark
+Name: SnowBoard StatusBar Extension
+
+Package: com.spark.snowboard.ui
+Version: 1.3.0~Beta2-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 476
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.spark.snowboard (>> 1.2.22)
+Filename: ./debfiles/com.spark.snowboard.ui-v1.3.0~Beta2-rootless.deb
+Size: 90040
+MD5sum: 7aee57cb145a18264de53eead554e8f7
+SHA1: cc87158bb0347eb4e29943d1e5c87337b8918478
+SHA256: e8cf665aecbf892d34835cfcc5aae5249d69aad7431419a7bda65686be0f7068
+Section: SnowBoard Extensions
+Description: UI Extension for SnowBoard
+Author: Spark
+Name: SnowBoard UI Extension
+
+Package: com.spark.snowboardapplication
+Version: 1.1.0~Beta4-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 992
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: com.spark.snowboard
+Filename: ./debfiles/com.spark.snowboardapplication-v1.1.0~Beta4-rootless.deb
+Size: 628018
+MD5sum: 12c5920e36cd8a44e17173fbbac90a85
+SHA1: 56f93bce85c63ba429883b938aa1c8a28ada4348
+SHA256: 85c5bb6d018c9d1afc38bc28999f56b2f6249476456292171bd19aef0e571d3e
+Section: Utilities
+Description: An awesome application!
+Author: Spark
+Name: SnowBoard
+
+Package: libskittycolor
+Version: 1.0
+Architecture: iphoneos-arm64e
+Maintainer: Skitty
+Installed-Size: 260
+Pre-Depends: rootless-compat(>= 0.1)
+Filename: ./debfiles/libskittycolor-v1.0.deb
+Size: 35558
+MD5sum: 5ca850cf21f12926b69b4054e5b4dd44
+SHA1: 5abc2d8a223e71966caf52df5eab440d157b0cc3
+SHA256: b2ff477d574fceb48cc38ac48fe189852aa1e71809d778cb803e3ef225b51681
+Section: System
+Description: A simple color picker implementation.
+Tag: role::developer
+Author: Skitty
+Name: libskittycolor
+
+Package: me.ikghd.ikset
+Version: 3.3
+Architecture: iphoneos-arm64e
+Maintainer: iKarwan <ikghd3@gmail.com>
+Installed-Size: 424
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, preferenceloader, firmware ( >= 15.0)
+Conflicts: com.yourepo.ikghd.ikset, pro.ikghd.ikset, pro.ikghd.iksettings
+Replaces: com.yourepo.ikghd.ikset, pro.ikghd.ikset, pro.ikghd.iksettings
+Filename: ./debfiles/me.ikghd.ikset-v3.3.deb
+Size: 54420
+MD5sum: 573378180e4e1aa0aaf63f40d9860e66
+SHA1: d222ee6d71e549e46e55e7043a6dddbba4f580e2
+SHA256: e99a64cdb403ccf90b26b25c55d64660d599416c4761e82ee16020d6d1d624b6
+Section: Tweaks
+Description: redefind Settings app !
+Tag: purpose::extension, compatible_min::ios15.0, compatible_max::ios16.8
+Author: iKarwan <ikghd3@gmail.com>
+Depiction: https://repo.ikghd.me/depictions/?p=me.ikghd.ikset
+Icon: https://repo.ikghd.me/assets/icons/me.ikghd.ikset.png
+Name: iKSettings
+Sileodepiction: https://repo.ikghd.me/sileodepictions/me.ikghd.ikset.json
 
 Package: me.nepeta.axon
 Version: 1.4-1
 Architecture: iphoneos-arm64e
 Maintainer: Baw Appie
 Installed-Size: 644
+Pre-Depends: rootless-compat(>= 0.1)
 Depends: mobilesubstrate, firmware (>= 11.0)
 Conflicts: io.ominousness.stackxi, com.thomasfinch.priorityhub, com.ioscreatix.intelixbeta, com.ioscreatix.intelix, com.spiritoflogic.ncunify, com.spiritoflogic.unifyx, com.hidan.nclink10, org.coolstar.ventana-modern, org.coolstar.ventana, org.s1ris.spinxi
 Filename: ./debfiles/me.nepeta.axon-v1.4-1.deb
-Size: 166638
-MD5sum: de5c41df76d1976d1e7fc1048691ca86
-SHA1: 74cec796a6c75474325ab8d11092107753f9c21b
-SHA256: 65b66a963f2f0d75ee7005c678e0af4dd0b590f484a11fe49500b5290a87464f
+Size: 167844
+MD5sum: 19c698c30bce881f8a0b962e6d3e93ce
+SHA1: 02114b051f30f2056037f908e03228e5ec563c25
+SHA256: d46ca85b5d6e43ded638dab2d85730136484009529327119592bd33edbc0add8
 Section: Tweaks
 Description: Priority Hub for iOS 15 (rootless/Ellekit)
 Author: Nepeta & Baw Appie
 Name: Axon
 
-Package: pro.ikghd.ikset
-Version: 3.3
+Package: org.mr.erika-rootless
+Version: 1.12.1
 Architecture: iphoneos-arm64e
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Installed-Size: 412
-Depends: mobilesubstrate, firmware (>= 15.0), preferenceloader
-Conflicts: com.yourepo.ikghd.ikset, pro.ikghd.iksettings
-Replaces: pro.ikghd.iksettings
-Filename: ./debfiles/pro.ikghd.ikset-v3.3.deb
-Size: 53286
-MD5sum: a4ca093dc24b773bb6a63c241a0c1f73
-SHA1: 75782d2ca8673ab311c77804e9ff1569881c6f19
-SHA256: 84e0a0a7fcab62b65668f91fe237e4770883bb4f6efa75a5fe0874ad8d06766d
+Maintainer: MainRepo
+Installed-Size: 236
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, lilliana.async | firmware (>= 15.0)
+Filename: ./debfiles/org.mr.erika-rootless-v1.12.1.deb
+Size: 66788
+MD5sum: 18f5b8a3d1d04bad997be5fec2f3121e
+SHA1: 1f1111369f18be1a111eea0653ee9831606efdbc
+SHA256: f68d29a639a054b92fc25424b377262a80360167aedf507766b646cc27ae332d
 Section: Tweaks
-Priority: optional
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=iksetDp
-Description: Redefined Settings app!
-Tag: purpose::extension
-Author: iKarwan <ikghd3@gmail.com>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=iksetDp
-Dev: ikghd
-Icon: file:///var/jb/Library/PreferenceBundles/iKSPrefs.bundle/icon@2x.png
-Name: iKSettings
-Sponsor: thebigboss.org <http://thebigboss.org>
+Description: Piracy downloader for Sileo
+Author: Paisseon
+Depiction: https://mrepo.org/depiction/5515
+Icon: https://paisseon.github.io/icons/Erika.png
+Name: Erika (rootless)
+Sileodepiction: https://mrepo.org/sileo/5515
 
-Package: xyz.cypwn.filzacrackrootless
-Version: 0.0.4
+Package: org.thebigboss.libcolorpicker
+Version: 1.6.9.1
 Architecture: iphoneos-arm64e
-Maintainer: CyPwn
-Installed-Size: 196
-Depends: firmware (>= 15.0)
-Filename: ./debfiles/xyz.cypwn.filzacrackrootless-v0.0.4.deb
-Size: 36974
-MD5sum: f863909236b33d22320c37385db60c58
-SHA1: 0f307f2fe857d361568661a59da88d13b852337e
-SHA256: ad8cb52991f5d1c705cb54b7c80d2a72963488517b3d0d073cdabbe317f41ec1
-Section: Cracks
-Description: Filza and AppsManager activation for free
-Author: Lilliana
-Depiction: https://repo.cypwn.xyz/depiction/1171
-Name: Filza Crack (rootless)
-Sileodepiction: https://repo.cypwn.xyz/sileo_depiction/1171
+Maintainer: Bailey Seymour
+Installed-Size: 392
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>= 6.0)
+Replaces: me.nepeta.libcolorpicker, ws.hbang.alderis
+Provides: me.nepeta.libcolorpicker, ws.hbang.alderis
+Filename: ./debfiles/org.thebigboss.libcolorpicker-v1.6.9.1.deb
+Size: 95724
+MD5sum: 6228086d01f3823b052554785f533920
+SHA1: 495783256ba2fe7f77493784666f92302a89ea57
+SHA256: de9dc5a5f761b53831779d7463ecfe6c3c1d4613acd21c8c483e4bf4b38df3c1
+Section: System
+Description: An awesome library of some sort!!
+Tag: role::developer
+Author: Bailey Seymour
+Depiction: https://p2kdev.github.io/repo/depictions/index.html?packageId=org.thebigboss.libcolorpicker
+Icon: https://p2kdev.github.io/repo/api/packageinfo/org.thebigboss.libcolorpicker/icon.png
+Name: libcolorpicker (Unofficial)
+Sileodepiction: https://p2kdev.github.io/repo/depictions/native/org.thebigboss.libcolorpicker.json
 
-Package: xyz.cypwn.lastlook
-Version: 3.6.5
+Package: xyz.skitty.spectrum
+Version: 1.1
 Architecture: iphoneos-arm64e
-Maintainer: CyPwn
-Depends: mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.15), firmware (>= 12.0)
-Filename: ./debfiles/xyz.cypwn.lastlook-v3.6.5.deb
-Size: 434106
-MD5sum: 4a8b5f4b7200b6e638a52fd037e4eee3
-SHA1: 2eb308350d49294624cec18fd13c24a41b61cbed
-SHA256: d512921de0ad094a9c6a63db54d0d46c1de3e9982a4aa3a9689d8b705dd22bbf
+Maintainer: Skitty
+Installed-Size: 580
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, libskittycolor, firmware (>= 13.0)
+Filename: ./debfiles/xyz.skitty.spectrum-v1.1.deb
+Size: 71652
+MD5sum: 2c0a208e11803ba50f92695042929d7c
+SHA1: b0f4414e5bd94e842a3b559557107532c1d62b59
+SHA256: 135ded7f92776cc629001d285225ec44fa7b413d127504c6d29cdfc8f672c915
 Section: Tweaks
-Description: An AOD tweak that feels stock, with endless possibilities!
-Author: AnthoPak
-Depiction: https://repo.cypwn.xyz/depiction/1275
-Icon: https://img.chariz.cloud/icon/lastlook/icon@3x.png
-Name: LastLook
-Sileodepiction: https://repo.cypwn.xyz/sileo_depiction/1275
+Description: Customize system colors!
+Author: Skitty & EvenDev
+Depiction: https://skitty.xyz/repo/depictions/xyz.skitty.spectrum/
+Icon: https://skitty.xyz/repo/icons/xyz.skitty.spectrum.png
+Name: Spectrum
+Sileodepiction: https://skitty.xyz/repo/depictions/xyz.skitty.spectrum/sileo.json
 
