@@ -1,3 +1,21 @@
+Package: Flex3beta
+Version: 1:3~Beta56
+Architecture: iphoneos-arm64e
+Maintainer: John Coates
+Depends: mobilesubstrate, firmware (>= 9.0)
+Conflicts: Flexpackage, Flexpackagebeta, com.fuyuchi.flex, Flex2packagebeta, Flex2package,  com.fuyuchi.flex2, Flex2Blackpackagebeta, com.johncoates.Flex3, Flex3FeatureCatalog
+Replaces: Flexpackage, Flexpackagebeta, com.fuyuchi.flex, Flex2packagebeta, Flex2package,  com.fuyuchi.flex2, Flex2Blackpackagebeta, com.johncoates.Flex3, Flex3FeatureCatalog
+Filename: ./debfiles/Flex3_dopamine.deb
+Size: 23135810
+MD5sum: cd061556c99138d0cd37b8d86c2cb8fd
+SHA1: fd3bd335f75dd566bbdbb5f51872fddb7b61ba5e
+SHA256: 616a00605b6aedf0bdb8fe7a7f0fdbe47fdef9325faa25b6e86dcb218241ce0f
+Section: Tweaks
+Description: Develop your own tweaks and share them on the Flex Community Cloud
+Author: John Coates
+Name: Flex 3 Beta
+Recommended: com.rpetrich.rocketbootstrap
+
 Package: alias20.bfdecryptor
 Version: 0.0.1
 Architecture: iphoneos-arm64e
