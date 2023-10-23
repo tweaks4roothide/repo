@@ -119,126 +119,6 @@ Depiction: http://ib-soft.net/depictions/?pkgId=com.exile90.icleanerpro
 Icon: file:///Applications/iCleaner.app/Icon.png
 Name: iCleaner Pro
 
-Package: com.ginsu.comet
-Version: 1.0.5
-Architecture: iphoneos-arm64e
-Maintainer: Ginsu
-Installed-Size: 2148
-Pre-Depends: rootless-compat(>= 0.1)
-Depends: dev.theos.orion14, firmware (>= 14.0)
-Filename: ./debfiles/com.ginsu.comet-v1.0.5.deb
-Size: 571502
-MD5sum: 28df141b67b679d0e8906ee609eced11
-SHA1: 78e9fd70df183cae8c14501a9db2b5ef110e86c9
-SHA256: b5ccafd115351c1a8d17a71bf174551096e73583c53dc05e9a8cfc7fc216ba44
-Section: Tweaks
-Description: A SwiftUI Prefs Framework
-Author: Ginsu
-Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.comet
-Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.comet/icon.png
-Name: Comet (Rootless)
-Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.comet.json
-
-Package: com.ginsu.dodo
-Version: 4.2.2
-Architecture: iphoneos-arm64e
-Maintainer: Ginsu
-Installed-Size: 7592
-Pre-Depends: rootless-compat(>= 0.1)
-Depends: dev.theos.orion14, firmware (>= 14.0), preferenceloader, com.ginsu.comet, com.ginsu.gscore, com.ginsu.gsweather
-Filename: ./debfiles/com.ginsu.dodo-v4.2.2.deb
-Size: 3355784
-MD5sum: 0783292ff9c405483a5994d7db147313
-SHA1: a24be09d2e26a2bf6d0ec582cbc297116ce2d692
-SHA256: 8e28b6d6bf79603ea0304bda735d423192ac8ffe47556cb2dcfaa3a8bd67145f
-Section: Tweaks
-Description: The perfect Lock Screen redesign.
-Author: Ginsu
-Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.dodo
-Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.dodo/icon.png
-Name: Dodo (Rootless)
-Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.dodo.json
-
-Package: com.ginsu.dualclock2
-Version: 2.0.2
-Architecture: iphoneos-arm64e
-Maintainer: Ginsu
-Installed-Size: 3832
-Pre-Depends: rootless-compat(>= 0.1)
-Depends: dev.theos.orion (>= 1.0.0), firmware (>= 14.0), preferenceloader, com.ginsu.gscore, com.ginsu.comet
-Filename: ./debfiles/com.ginsu.dualclock2-v2.0.2.deb
-Size: 1116566
-MD5sum: 55e63b2a40ecd300faa07c417de84890
-SHA1: f832ad0497d0ca256a08cc1ebd89b93582859ca2
-SHA256: 7d5d4117e8befe5bf2907e54a112b37ca51698275eabea1188ced59f7751c6eb
-Section: Tweaks
-Description: Two time zones on the Lock Screen!
-Author: Ginsu
-Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.dualclock2
-Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.dualclock2/icon.png
-Name: DualClock 2 (Rootless)
-Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.dualclock2.json
-
-Package: com.ginsu.gscore
-Version: 1.0.4
-Architecture: iphoneos-arm64e
-Maintainer: Ginsu
-Installed-Size: 4272
-Pre-Depends: rootless-compat(>= 0.1)
-Depends: dev.theos.orion14, firmware (>= 14.0)
-Filename: ./debfiles/com.ginsu.gscore-v1.0.4.deb
-Size: 1366878
-MD5sum: ec05aa21326221536ac36d8871236bd5
-SHA1: ae743335d61a0669fed8294d75e18d9f3157eff0
-SHA256: d89d85705d1bc78f230d02dabfeada540c2cbeb2fffa2e5242ccb8055a0c40e0
-Section: Tweaks
-Description: Environment and communication between my tweaks
-Author: Ginsu
-Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.gscore
-Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.gscore/icon.png
-Name: GSCore (Rootless)
-Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.gscore.json
-
-Package: com.ginsu.gsweather
-Version: 1.1.1
-Architecture: iphoneos-arm64e
-Maintainer: Ginsu
-Installed-Size: 1216
-Pre-Depends: rootless-compat(>= 0.1)
-Depends: dev.theos.orion14, firmware (>= 14.0)
-Filename: ./debfiles/com.ginsu.gsweather-v1.1.1.deb
-Size: 164038
-MD5sum: a871beda467ef79b7d37694001e32102
-SHA1: 7e531d1930314b6825ee64e210bb4d91e1266ee3
-SHA256: 0323c4230531e304feedb9c630131238412103d714cb5dc06c12ccd9b672f3aa
-Section: Tweaks
-Description: A Weather fetching framework
-Author: Ginsu
-Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.gsweather
-Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.gsweather/icon.png
-Name: GSWeather (Rootless)
-Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.gsweather.json
-
-Package: com.ginsu.pockettranslator
-Version: 2.1.0
-Architecture: iphoneos-arm64e
-Maintainer: Ginsu
-Installed-Size: 1140
-Pre-Depends: rootless-compat(>= 0.1)
-Depends: dev.theos.orion (>= 1.0.0), firmware (>= 14.0), com.opa334.ccsupport
-Filename: ./debfiles/com.ginsu.pockettranslator-v2.1.0.deb
-Size: 165920
-MD5sum: 8c041f9d01d368a10265ff8020659858
-SHA1: 07ebfad06dce7c54596043d6381f91a00bfcb42d
-SHA256: 2c299f6404fac59a6ef1bcda285acaab059396704dd09e8a513075220956a5db
-Section: Tweaks
-Description: Lightweight & convenient translator.
-Author: Ginsu
-Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.pockettranslator
-Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.pockettranslator/icon.png
-Name: PocketTranslator (Rootless)
-Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.pockettranslator.json
-
 Package: com.ichitaso.powerselector11
 Version: 1.3.9
 Architecture: iphoneos-arm64e
@@ -408,6 +288,28 @@ Sileodepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.i
 Someotherentrytocontrol: True
 Tags: compatible_min::ios13.0, compatible_max::ios16.5
 
+Package: com.nightwind.onesettings
+Version: 2.0.4
+Architecture: iphoneos-arm64e
+Maintainer: Nightwind <nightwinddev@gmail.com>
+Installed-Size: 1113
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>= 14.0), mobilesubstrate (>= 0.9.5000), com.mrgcgamer.libgcuniversal, preferenceloader
+Conflicts: com.shepgoba.settingswidgets, com.creaturecoding.shuffle
+Replaces: com.twickd.nightwind.onesettings
+Filename: ./debfiles/com.nightwind.onesettings_v2.0.4_iphoneos-arm64e.deb
+Size: 276390
+MD5sum: dedbdbb37f2e992bfbf72cef342b84a2
+SHA1: d453ed037db0c086cbee285c2c1bef9652f218cd
+SHA256: 77d153be18fd8726168f790f5e6e06a7d03728e32c5400a25881d36de9941796
+Section: Tweaks
+Description: A great enhancement to your Settings App!
+Tag: cydia::commercial, compatible_min::ios14.0
+Author: Nightwind <nightwinddev@gmail.com>
+Depiction: https://chariz.com/buy/onesettings
+Icon: https://img.chariz.cloud/icon/onesettings/icon@3x.png
+Name: OneSettings
+
 Package: com.p2kdev.deleteforeverxs
 Version: 1.1
 Architecture: iphoneos-arm64e
@@ -447,26 +349,6 @@ Depiction: https://p2kdev.github.io/repo/depictions/index.html?packageId=com.p2k
 Icon: https://p2kdev.github.io/repo/api/packageinfo/com.p2kdev.ringpercentlabel/icon.png
 Name: RingPercentLabel
 Sileodepiction: https://p2kdev.github.io/repo/depictions/native/com.p2kdev.ringpercentlabel.json
-
-Package: com.pantsthief.flexing
-Version: 1.5.0
-Architecture: iphoneos-arm64e
-Maintainer: Tanner Bennett <thepantsthief@me.com>
-Installed-Size: 168
-Pre-Depends: rootless-compat(>= 0.1), firmware (>= 8.0)
-Depends: libflex
-Conflicts: com.dgh0st.flexall, gg.gh0stbyte.flexivator, com.shmoopillic.flexible, applebetas.ios.tweak.devtools.flexgesture, com.creaturecoding.flexer, com.lacertosusrepo.flex4me, me.nepeta.flexxx, com.ipadkid.flexit, com.qiop1379.flexbar, com.leftyfl1p.reflex
-Filename: ./debfiles/com.pantsthief.flexing-v1.5.0.deb
-Size: 10524
-MD5sum: 65faffcde4aea0c38a84ea84fd50afc6
-SHA1: 52b2ffa054c53fbfa5e9453e7b79dd2aa9d31a4a
-SHA256: cd1e86d9fb73709c2a885b0a95a5f6f263c1c525795f87f45a16b32cdc219bf3
-Section: Tweaks
-Description: Open FLEX anywhere!
-Author: Tanner Bennett <thepantsthief@me.com>
-Depiction: https://nscake.github.io/package.html?package=com.pantsthief.flexing
-Name: FLEXing
-Sileodepiction: https://nscake.github.io/depictions/com.pantsthief.flexing.sileo.json
 
 Package: com.peterdev.half
 Version: 1.0.3
@@ -839,6 +721,22 @@ Description: An awesome application!
 Author: Spark
 Name: SnowBoard
 
+Package: com.xandesign.FelicityPro
+Version: 4.1
+Architecture: iphoneos-arm64e
+Maintainer: XerusDesign <unixdesignios@gmail.com>
+Replaces: com.xandesign.FelicityPro (3.3)
+Filename: ./debfiles/com.xandesign.felicitypro-v4.1.deb
+Size: 23028984
+MD5sum: 40ba74c5fe5d70702e64df1720230b4e
+SHA1: 5471b6b6803131b0866b3d950bbea7582a57f8b5
+SHA256: c6f8efb01c5793a92b3b516b59eca004d7f6d97bbca0a438543606d7dd2251f4
+Section: Themes
+Homepage: https://twitter.com/xerusdesign
+Description: a more colorful & detailed look for iOS
+Author: XerusDesign <unixdesignios@gmail.com>
+Name: Felicity Pro
+
 Package: libskittycolor
 Version: 1.0
 Architecture: iphoneos-arm64e
@@ -878,6 +776,27 @@ Depiction: https://repo.ikghd.me/depictions/?p=me.ikghd.ikset
 Icon: https://repo.ikghd.me/assets/icons/me.ikghd.ikset.png
 Name: iKSettings
 Sileodepiction: https://repo.ikghd.me/sileodepictions/me.ikghd.ikset.json
+
+Package: me.lau.atria
+Version: 1.4.1
+Architecture: iphoneos-arm64e
+Maintainer: ren7995 <lau7995ren@gmail.com>
+Installed-Size: 886
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader, ws.hbang.alderis (>= 1.1)
+Conflicts: com.irepo.boxy4, me.kritanta.homepluspro
+Filename: ./debfiles/me.lau.atria-v1.4.1.deb
+Size: 269052
+MD5sum: c1f31108727e9cb1a0c988321e9d9162
+SHA1: 2526c3aba2fd70c7803f4e426c419ed7d50e68c7
+SHA256: 61a70ed5135e7dc6ab80253e9913e2e1593b3bf0a540d847c35c6e5497fe164c
+Section: Tweaks
+Description: A proper homescreen layout editor for iOS 13-16
+Tag: compatible_min::ios13.0
+Author: ren7995 <lau7995ren@gmail.com>
+Depiction: https://chariz.com/get/atria
+Icon: https://img.chariz.cloud/icon/atria/icon@3x.png
+Name: Atria
 
 Package: me.nepeta.axon
 Version: 1.4-1
