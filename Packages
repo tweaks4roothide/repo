@@ -119,6 +119,126 @@ Depiction: http://ib-soft.net/depictions/?pkgId=com.exile90.icleanerpro
 Icon: file:///Applications/iCleaner.app/Icon.png
 Name: iCleaner Pro
 
+Package: com.ginsu.comet
+Version: 1.0.5
+Architecture: iphoneos-arm64e
+Maintainer: Ginsu
+Installed-Size: 2148
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: dev.theos.orion14, firmware (>= 14.0)
+Filename: ./debfiles/com.ginsu.comet-v1.0.5.deb
+Size: 571502
+MD5sum: 28df141b67b679d0e8906ee609eced11
+SHA1: 78e9fd70df183cae8c14501a9db2b5ef110e86c9
+SHA256: b5ccafd115351c1a8d17a71bf174551096e73583c53dc05e9a8cfc7fc216ba44
+Section: Tweaks
+Description: A SwiftUI Prefs Framework
+Author: Ginsu
+Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.comet
+Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.comet/icon.png
+Name: Comet (Rootless)
+Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.comet.json
+
+Package: com.ginsu.dodo
+Version: 4.2.2
+Architecture: iphoneos-arm64e
+Maintainer: Ginsu
+Installed-Size: 7592
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: dev.theos.orion14, firmware (>= 14.0), preferenceloader, com.ginsu.comet, com.ginsu.gscore, com.ginsu.gsweather
+Filename: ./debfiles/com.ginsu.dodo-v4.2.2.deb
+Size: 3355784
+MD5sum: 0783292ff9c405483a5994d7db147313
+SHA1: a24be09d2e26a2bf6d0ec582cbc297116ce2d692
+SHA256: 8e28b6d6bf79603ea0304bda735d423192ac8ffe47556cb2dcfaa3a8bd67145f
+Section: Tweaks
+Description: The perfect Lock Screen redesign.
+Author: Ginsu
+Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.dodo
+Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.dodo/icon.png
+Name: Dodo (Rootless)
+Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.dodo.json
+
+Package: com.ginsu.dualclock2
+Version: 2.0.2
+Architecture: iphoneos-arm64e
+Maintainer: Ginsu
+Installed-Size: 3832
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: dev.theos.orion (>= 1.0.0), firmware (>= 14.0), preferenceloader, com.ginsu.gscore, com.ginsu.comet
+Filename: ./debfiles/com.ginsu.dualclock2-v2.0.2.deb
+Size: 1116566
+MD5sum: 55e63b2a40ecd300faa07c417de84890
+SHA1: f832ad0497d0ca256a08cc1ebd89b93582859ca2
+SHA256: 7d5d4117e8befe5bf2907e54a112b37ca51698275eabea1188ced59f7751c6eb
+Section: Tweaks
+Description: Two time zones on the Lock Screen!
+Author: Ginsu
+Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.dualclock2
+Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.dualclock2/icon.png
+Name: DualClock 2 (Rootless)
+Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.dualclock2.json
+
+Package: com.ginsu.gscore
+Version: 1.0.4
+Architecture: iphoneos-arm64e
+Maintainer: Ginsu
+Installed-Size: 4272
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: dev.theos.orion14, firmware (>= 14.0)
+Filename: ./debfiles/com.ginsu.gscore-v1.0.4.deb
+Size: 1366878
+MD5sum: ec05aa21326221536ac36d8871236bd5
+SHA1: ae743335d61a0669fed8294d75e18d9f3157eff0
+SHA256: d89d85705d1bc78f230d02dabfeada540c2cbeb2fffa2e5242ccb8055a0c40e0
+Section: Tweaks
+Description: Environment and communication between my tweaks
+Author: Ginsu
+Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.gscore
+Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.gscore/icon.png
+Name: GSCore (Rootless)
+Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.gscore.json
+
+Package: com.ginsu.gsweather
+Version: 1.1.1
+Architecture: iphoneos-arm64e
+Maintainer: Ginsu
+Installed-Size: 1216
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: dev.theos.orion14, firmware (>= 14.0)
+Filename: ./debfiles/com.ginsu.gsweather-v1.1.1.deb
+Size: 164038
+MD5sum: a871beda467ef79b7d37694001e32102
+SHA1: 7e531d1930314b6825ee64e210bb4d91e1266ee3
+SHA256: 0323c4230531e304feedb9c630131238412103d714cb5dc06c12ccd9b672f3aa
+Section: Tweaks
+Description: A Weather fetching framework
+Author: Ginsu
+Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.gsweather
+Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.gsweather/icon.png
+Name: GSWeather (Rootless)
+Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.gsweather.json
+
+Package: com.ginsu.pockettranslator
+Version: 2.1.0
+Architecture: iphoneos-arm64e
+Maintainer: Ginsu
+Installed-Size: 1140
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: dev.theos.orion (>= 1.0.0), firmware (>= 14.0), com.opa334.ccsupport
+Filename: ./debfiles/com.ginsu.pockettranslator-v2.1.0.deb
+Size: 165920
+MD5sum: 8c041f9d01d368a10265ff8020659858
+SHA1: 07ebfad06dce7c54596043d6381f91a00bfcb42d
+SHA256: 2c299f6404fac59a6ef1bcda285acaab059396704dd09e8a513075220956a5db
+Section: Tweaks
+Description: Lightweight & convenient translator.
+Author: Ginsu
+Depiction: https://ginsu.dev/repo/depictions/index.html?packageId=com.ginsu.pockettranslator
+Icon: https://ginsu.dev/repo/api/packageinfo/com.ginsu.pockettranslator/icon.png
+Name: PocketTranslator (Rootless)
+Sileodepiction: https://ginsu.dev/repo/depictions/native/com.ginsu.pockettranslator.json
+
 Package: com.ichitaso.powerselector11
 Version: 1.3.9
 Architecture: iphoneos-arm64e
@@ -240,6 +360,53 @@ Depiction: https://mtac.app/repo/depiction/web/com.mtac.lynxapp.html
 Icon: file:///Applications/Lynx.app/icon.png
 Name: Lynx Application
 Sileodepiction: https://mtac.app/repo/depiction/native/com.mtac.lynxapp.json
+
+Package: com.nahtedetihw.centeredlabels-rootless
+Version: 1.3
+Architecture: iphoneos-arm64e
+Maintainer: ETHN <ethanwhited2208@gmail.com>
+Pre-Depends: rootless-compat(>= 0.1)
+Filename: ./debfiles/com.nahtedetihw.centeredlabels-rootless-v1.3.deb
+Size: 13948
+MD5sum: a6f449ad65977a2016609ee779edb3e5
+SHA1: 68cdb9eedaf5106f254e7d457f251b89f5e979cc
+SHA256: da35697101d5a01a01e5e2a864f5fac0085e5fac60bd1a4633c200f92e015504
+Section: Tweaks
+Homepage: https://nahtedetihw.github.io
+Description: Center all labels in main Settings page.
+Tag: role::enduser
+Author: ETHN <ethanwhited2208@gmail.com>
+Depiction: https://nahtedetihw.github.io/depiction/web/com.nahtedetihw.centeredlabels-rootless.html
+Icon: https://nahtedetihw.github.io/assets/com.nahtedetihw.centeredlabels-rootless/icon.png
+Moderndepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.centeredlabels-rootless.json
+Name: CenteredLabels-Rootless
+Sileodepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.centeredlabels-rootless.json
+Someotherentrytocontrol: True
+Tags: compatible_min::ios13.0, compatible_max::ios16.4
+
+Package: com.nahtedetihw.iconrotation-rootless
+Version: 1.1
+Architecture: iphoneos-arm64e
+Maintainer: ETHN <ethanwhited2208@gmail.com>
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>=13.0), mobilesubstrate
+Filename: ./debfiles/com.nahtedetihw.iconrotation-rootless-v1.1.deb
+Size: 7754
+MD5sum: 75f558397bf44debdc16ad27dd8f1692
+SHA1: 5ec47e43e5c6a29ee47257a4c36953921128f7f0
+SHA256: f4ce9895520378630fb6183e4a4841c9511fca2ec01dcbe9bc2ec7f324379e06
+Section: Tweaks
+Homepage: https://nahtedetihw.github.io
+Description: Rotate your icons with device orientation!
+Tag: role::enduser
+Author: ETHN <ethanwhited2208@gmail.com>
+Depiction: https://nahtedetihw.github.io/depiction/web/com.nahtedetihw.iconrotation-rootless.html
+Icon: https://nahtedetihw.github.io/assets/com.nahtedetihw.iconrotation-rootless/icon.png
+Moderndepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.iconrotation-rootless.json
+Name: IconRotation-Rootless
+Sileodepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.iconrotation-rootless.json
+Someotherentrytocontrol: True
+Tags: compatible_min::ios13.0, compatible_max::ios16.5
 
 Package: com.p2kdev.deleteforeverxs
 Version: 1.1
@@ -730,6 +897,24 @@ Description: Priority Hub for iOS 15 (rootless/Ellekit)
 Author: Nepeta & Baw Appie
 Name: Axon
 
+Package: net.p0358.noti-fi
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: p0358
+Installed-Size: 204
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate
+Conflicts: com.rpgfarm.noti-fi
+Filename: ./debfiles/net.p0358.noti-fi-v1.0.2.deb
+Size: 18664
+MD5sum: 63d008a5b459d824fb318479b2e31817
+SHA1: 8fa92338ba8ccd875dd4c545eeb7f04c27bfd926
+SHA256: e1fe975e89e195e1f7f0aed8e982d9f65f9218b7e23aacc952809cc2d7a7f64d
+Section: Tweaks
+Description: Android Wi-Fi connection notification
+Author: Baw Appie, p0358
+Name: Noti-Fi
+
 Package: org.mr.erika-rootless
 Version: 1.12.1
 Architecture: iphoneos-arm64e
@@ -749,6 +934,27 @@ Depiction: https://mrepo.org/depiction/5515
 Icon: https://paisseon.github.io/icons/Erika.png
 Name: Erika (rootless)
 Sileodepiction: https://mrepo.org/sileo/5515
+
+Package: org.mr.ikeywi4rl
+Version: 4.2.1k
+Architecture: iphoneos-arm64e
+Maintainer: MainRepo
+Installed-Size: 988
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: preferenceloader, mobilesubstrate, firmware (>= 11.0), com.opa334.altlist
+Conflicts: org.thebigboss.ikeywi, tw.hiraku.ikeywi2, tw.hiraku.ikeywi3, tw.hiraku.ikeywi3p, com.tw3pole.exkey, gsc.ipad
+Filename: ./debfiles/org.mr.ikeywi4rl-v4.2.1k.deb
+Size: 269914
+MD5sum: 0b67f30d9787d97b235e5508c0a6fce0
+SHA1: 1d78cf71f6a8cb5ad75067c1548e069f29853f73
+SHA256: cfc6cf9f33653724718591d2177214a6c11c5face6873b02a13d9c53a030e910
+Section: Tweaks
+Description: Adding a customizable row of keyboard
+Author: Hiraku <dev@hiraku.tw>
+Depiction: https://mrepo.org/depiction/5545
+Icon: https://media.havoc.app/620ca96dc80367a0d8c7f5a0?w=3840&q=75
+Name: iKeywi 4 (rootless)
+Sileodepiction: https://mrepo.org/sileo/5545
 
 Package: org.thebigboss.libcolorpicker
 Version: 1.6.9.1
