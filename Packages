@@ -54,6 +54,26 @@ Moderndepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.addtofo
 Name: AddToFolder (Rootless)
 Sileodepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.addtofolder-rootless.json
 
+Package: com.anthopak.lastlook
+Version: 3.6.1
+Architecture: iphoneos-arm64e
+Maintainer: AnthoPak <anthopakdev@gmail.com>
+Installed-Size: 1331
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.15), firmware (>= 12.0)
+Filename: ./debfiles/com.anthopak.lastlook_3.6.1_iphoneos-arm64e64e.deb
+Size: 345292
+MD5sum: b25ec099c700376ab5b79d0b7f5a4418
+SHA1: cfa7b4162d804320ac992b8c5876954d2cb8d15a
+SHA256: a50a2dfc1ff48aa10011bb000b6984dcac531f8ed9844152e88959c87a4fb0a6
+Section: Tweaks
+Description: An AOD tweak that feels stock, with endless possibilities!
+Tag: cydia::commercial, compatible_min::ios12.0
+Author: AnthoPak <anthopakdev@gmail.com>
+Depiction: https://chariz.com/buy/lastlook
+Icon: https://img.chariz.cloud/icon/lastlook/icon@3x.png
+Name: LastLook (Xinafied-rootless)
+
 Package: com.creaturecoding.libcspreferences
 Version: 1.5.8
 Architecture: iphoneos-arm64e
@@ -97,6 +117,40 @@ Depiction: https://creaturecoding.com/?page=depiction&id=shuffle
 Icon: file:///Library/PreferenceBundles/shuffle.bundle/SettingsIcon@3x.png
 Name: Shuffle
 Sileodepiction: https://creaturecoding.com/sileo/depiction/?package_id=shuffle
+
+Package: com.evynw.fontquicksand14
+Version: 1.0
+Architecture: iphoneos-arm64e
+Maintainer: Evelyn (ev_ynw) <ev.ynam.w@gmail.com>
+Filename: ./debfiles/com.evynw.fontquicksand14_1.0_iphoneos-arm64e.deb
+Size: 10520184
+MD5sum: bc9ecce07923c9f8d9d1d579fef58fb1
+SHA1: ae3c94f95d6c8b26d1868b77c0ad1615875ae093
+SHA256: 47022488df51a462da2854fb6d65636ffad51131c814e62c1dfb89c5e1f0ed9c
+Section: Fonts (iOS14-16)
+Description: Rounded sans serif. 100% size. For iOS14-16.
+Author: Alex (@Alexman1979)
+Depiction: https://evynw.github.io/depictions/?p=com.evynw.fontquicksand14
+Icon: https://evynw.github.io/depictions/sectionIcons/Fonts.png
+Name: Quicksand (iOS14)
+Sileodepiction: https://evynw.github.io/sileo/fontquicksand14.json
+
+Package: com.evynw.fontquicksand8514
+Version: 1.0
+Architecture: iphoneos-arm64e
+Maintainer: Evelyn (ev_ynw) <ev.ynam.w@gmail.com>
+Filename: ./debfiles/com.evynw.fontquicksand8514_1.0_iphoneos-arm64e.deb
+Size: 11089924
+MD5sum: 61a52343c970295d5709975429756da1
+SHA1: 75b7d34572c567acb81d7fef12ec1d604d3c2f24
+SHA256: e77ec9dd0bb2c3de79c2a1328d943dd0ad3db93139d8c08db7d41d76729a5666
+Section: Fonts (iOS14-16)
+Description: Rounded sans serif. 85% size. For iOS14-16.
+Author: Alex (@Alexman1979)
+Depiction: https://evynw.github.io/depictions/?p=com.evynw.fontquicksand8514
+Icon: https://evynw.github.io/depictions/sectionIcons/Fonts.png
+Name: Quicksand_85% (iOS14)
+Sileodepiction: https://evynw.github.io/sileo/fontquicksand8514.json
 
 Package: com.exile90.icleanerpro
 Version: 7.10.0
@@ -187,6 +241,42 @@ Icon: https://p2kdev.github.io/repo/api/packageinfo/com.ioscreatix.sugarcane/ico
 Name: SugarCane 13/14
 Sileodepiction: https://p2kdev.github.io/repo/depictions/native/com.ioscreatix.sugarcane.json
 
+Package: com.itznebbs.edge2
+Version: 1.0.3
+Architecture: iphoneos-arm64e
+Maintainer: Nebbs
+Installed-Size: 560
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>=15.0), com.itznebbs.phoenix (>=1.0.4)
+Conflicts: com.junesiphone.lockpluspro
+Replaces: io.securarepo.edge
+Filename: ./debfiles/com.itznebbs.edge2-v1.0.3.deb
+Size: 207908
+MD5sum: 66bf2600626fd8edb1dcd51e3b9ac584
+SHA1: f97b94411b7b3bfdccaf808072260473a0e4406f
+SHA256: 2f7ba632cc97242d07e9ddb10f4a6944616cde76b42f3f3c885445382834e10f
+Section: Tweaks
+Description: Color your device in a beautiful and elegant way!
+Author: Nebbs + Max Bridgland
+Name: Edge 2
+
+Package: com.itznebbs.phoenix
+Version: 1.0.4
+Architecture: iphoneos-arm64e
+Maintainer: Nebbs
+Installed-Size: 404
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>=15.0)
+Filename: ./debfiles/com.itznebbs.phoenix-v1.0.4.deb
+Size: 71418
+MD5sum: df6e6edebaa75115956193f74f8af507
+SHA1: b7929f9f167dc730d0bf2633c294a1483ecfc24d
+SHA256: 873d5807ac5c58e08f4a612f2dac70280752c38d2648f4a77a1fa447971ea7d1
+Section: Development
+Description: Collection of classes used in my tweaks.
+Author: Nebbs
+Name: Phoenix
+
 Package: com.jschiefner.advancedbrightnessslider
 Version: 1.2.1
 Architecture: iphoneos-arm64e
@@ -203,6 +293,25 @@ Section: Tweaks
 Description: Tweak to dim the screen even further with the brightness slider in Control Center
 Author: Jonas Schiefner
 Name: AdvancedBrightnessSlider
+
+Package: com.mrgcgamer.libgcuniversal
+Version: 1.6.4
+Architecture: iphoneos-arm64e
+Maintainer: MrGcGamer
+Installed-Size: 296
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>= 14.0) | ws.hbang.alderis, firmware (>= 12.0)
+Provides: com.mrgcgamer.libgcimagepicker, com.mrgcgamer.libgccolorpicker
+Filename: ./debfiles/com.mrgcgamer.libgcuniversal_1.6.4_iphoneos-arm64e.deb
+Size: 56834
+MD5sum: 896eb3f516aeae3a8ed8fa8ab85b04ae
+SHA1: 2b3c4f4f2756e909509489ccd4140bbf04f34ba8
+SHA256: 35f8fe18dc8cd855ffc47e13b480dd09f9383d14ecbdc71dfd31c573c9d914a5
+Section: Development
+Description: An awesome library of some sort!!
+Tag: role::developer
+Author: MrGcGamer
+Name: LibGcUniversal
 
 Package: com.mtac.ampere
 Version: 1.2
@@ -288,7 +397,7 @@ Sileodepiction: https://nahtedetihw.github.io/depiction/native/com.nahtedetihw.i
 Someotherentrytocontrol: True
 Tags: compatible_min::ios13.0, compatible_max::ios16.5
 
-Package: com.nightwind.onesettings
+Package: com.nightwind.onesettingsroothide
 Version: 2.0.4
 Architecture: iphoneos-arm64e
 Maintainer: Nightwind <nightwinddev@gmail.com>
@@ -297,11 +406,11 @@ Pre-Depends: rootless-compat(>= 0.1)
 Depends: firmware (>= 14.0), mobilesubstrate (>= 0.9.5000), com.mrgcgamer.libgcuniversal, preferenceloader
 Conflicts: com.shepgoba.settingswidgets, com.creaturecoding.shuffle
 Replaces: com.twickd.nightwind.onesettings
-Filename: ./debfiles/com.nightwind.onesettings_v2.0.4_iphoneos-arm64e.deb
-Size: 276390
-MD5sum: dedbdbb37f2e992bfbf72cef342b84a2
-SHA1: d453ed037db0c086cbee285c2c1bef9652f218cd
-SHA256: 77d153be18fd8726168f790f5e6e06a7d03728e32c5400a25881d36de9941796
+Filename: ./debfiles/com.nightwind.onesettingsroothide_2.0.4_iphoneos-arm64e.deb
+Size: 211744
+MD5sum: 0cf868a41845f8f5858c726455a1184e
+SHA1: d673ed6b78a69b8045433aec4e25e7d71db95867
+SHA256: d871b8523b61d07ba121d068cac0e130eab8ad769a48b290486e9b088d9df0b3
 Section: Tweaks
 Description: A great enhancement to your Settings App!
 Tag: cydia::commercial, compatible_min::ios14.0
@@ -366,6 +475,25 @@ Section: Tweaks
 Description: Fancy iOS Battery Indicator for iOS 11+
 Author: Soongyu Kwon & Ayden Leppert
 Name: half
+
+Package: com.ps.amber
+Version: 1.2.0
+Architecture: iphoneos-arm64e
+Maintainer: PoomSmart
+Installed-Size: 368
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, gsc.camera-flash, firmware (>= 14.0)
+Filename: ./debfiles/com.ps.amber-v1.2.0.deb
+Size: 12920
+MD5sum: 1d64c75b58091d43b4e8590bdd2d0e93
+SHA1: 1e097b769726d458a852a49998bf7fd5cbe83d15
+SHA256: a2916701b7d37da5309fe2aef5ead760730dfb01fb7a8870c9171c518db974aa
+Section: Tweaks
+Description: Amber-ify your flashlight LEDs.
+Author: PoomSmart
+Depiction: https://poomsmart.github.io/repo/depictions/amber.html
+Name: Amber
+Sileodepiction: https://poomsmart.github.io/repo/sileodepictions/amber.json
 
 Package: com.rpgfarm.a-font
 Version: 1.9.3-2
@@ -737,6 +865,26 @@ Description: a more colorful & detailed look for iOS
 Author: XerusDesign <unixdesignios@gmail.com>
 Name: Felicity Pro
 
+Package: jb.acc.GpsManager.rootless
+Version: 2.4.0.3
+Architecture: iphoneos-arm64e
+Maintainer: chencong
+Installed-Size: 4122
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>= 6.0), mobilesubstrate
+Conflicts: net.85819.ios.otrlocation, com.abcydia.otrlocation
+Replaces: net.85819.ios.otrlocation, com.abcydia.otrlocation
+Filename: ./debfiles/GpsManagerRootless2.4.0.3.deb
+Size: 4598180
+MD5sum: 4b672c49e1d671ee170d4822e5ce9286
+SHA1: d78127ee76673af9de1d7e496195e40b0a87818c
+SHA256: d06cb2b0b0979de969ee762fb546ccacea2050a0ddfedf46fb1e07185c7baf0a
+Section: Utilities
+Priority: optional
+Description: GPS Manager(rootless), configure APP's fake GPS location wherever you like. GPS定位管家(无根越狱)，可设置应用的虚拟定位，随时随地定位修改位置。
+Author: chencong
+Name: GPS Manager(GPS定位管家)
+
 Package: libskittycolor
 Version: 1.0
 Architecture: iphoneos-arm64e
@@ -874,6 +1022,27 @@ Depiction: https://mrepo.org/depiction/5545
 Icon: https://media.havoc.app/620ca96dc80367a0d8c7f5a0?w=3840&q=75
 Name: iKeywi 4 (rootless)
 Sileodepiction: https://mrepo.org/sileo/5545
+
+Package: org.mr.velvet2-rootless
+Version: 2.0.3
+Architecture: iphoneos-arm64e
+Maintainer: MainRepo
+Installed-Size: 596
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Conflicts: com.initwithframe.velvet
+Filename: ./debfiles/org.mr.velvet2-rootless-v2.0.3.deb
+Size: 122124
+MD5sum: 5a145906540503b120f6cfe5a2d94da8
+SHA1: 46d88d9506de7dd584338248446f1d62c5f99d25
+SHA256: 6f6e6d0050bbc1e9a8e4a7ec2eceb0ceaa10e9758aeda8c646ea94b1af2e9d4e
+Section: Tweaks
+Description: A fully customizable notification experience
+Author: NoisyFlake <support@noisyflake.com>
+Depiction: https://mrepo.org/depiction/5474
+Icon: https://img.chariz.cloud/icon/velvet-2/icon@3x.png
+Name: Velvet 2 (rootless)
+Sileodepiction: https://mrepo.org/sileo/5474
 
 Package: org.thebigboss.libcolorpicker
 Version: 1.6.9.1
