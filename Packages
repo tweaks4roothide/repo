@@ -54,25 +54,6 @@ Moderndepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.addtofo
 Name: AddToFolder (Rootless)
 Sileodepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.addtofolder-rootless.json
 
-Package: com.anthopak.lastlook.roothide
-Version: 3.6.1
-Architecture: iphoneos-arm64e
-Maintainer: AnthoPak <anthopakdev@gmail.com>
-Installed-Size: 1331
-Pre-Depends: rootless-compat(>= 0.1)
-Depends: mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.15), firmware (>= 12.0)
-Filename: ./debfiles/com.anthopak.lastlook.roothide_3.6.1_iphoneos-arm64e.deb
-Size: 285328
-MD5sum: 5408ec9c529dbdcb27cce4afa3312e0c
-SHA1: 8cb303b980c3f9604885d2a1823fa653ae964aa5
-SHA256: 8d805e548fff4b8c5dea03dd7878cb896472f59c635f3e1f171c49773ecdf1b6
-Section: Tweaks
-Description: An AOD tweak that feels stock, with endless possibilities!
-Author: AnthoPak <anthopakdev@gmail.com>
-Depiction: https://chariz.com/buy/lastlook
-Icon: https://img.chariz.cloud/icon/lastlook/icon@3x.png
-Name: LastLook (Roothide)
-
 Package: com.creaturecoding.libcspreferences
 Version: 1.5.8
 Architecture: iphoneos-arm64e
