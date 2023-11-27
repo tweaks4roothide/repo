@@ -54,25 +54,25 @@ Moderndepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.addtofo
 Name: AddToFolder (Rootless)
 Sileodepiction: https://repo.anthopak.dev/depiction/native/com.anthopak.addtofolder-rootless.json
 
-Package: com.anthopak.lastlook
+Package: com.anthopak.lastlook.roothide
 Version: 3.6.1
 Architecture: iphoneos-arm64e
 Maintainer: AnthoPak <anthopakdev@gmail.com>
 Installed-Size: 1331
 Pre-Depends: rootless-compat(>= 0.1)
 Depends: mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.15), firmware (>= 12.0)
-Filename: ./debfiles/com.anthopak.lastlook_3.6.1_iphoneos-arm64e64e.deb
-Size: 345292
-MD5sum: b25ec099c700376ab5b79d0b7f5a4418
-SHA1: cfa7b4162d804320ac992b8c5876954d2cb8d15a
-SHA256: a50a2dfc1ff48aa10011bb000b6984dcac531f8ed9844152e88959c87a4fb0a6
+Filename: ./debfiles/com.anthopak.lastlook.roothide_3.6.1_iphoneos-arm64e.deb
+Size: 285944
+MD5sum: 5562dedb52d04f3dbd4eabc80712de13
+SHA1: b5686d0023161837e61ff316dcb2bfd30e585133
+SHA256: bae12e9a85ac5f99b010512a358c8f65e1c41de6d319871a85dd38eca7cb5d1d
 Section: Tweaks
 Description: An AOD tweak that feels stock, with endless possibilities!
 Tag: cydia::commercial, compatible_min::ios12.0
 Author: AnthoPak <anthopakdev@gmail.com>
 Depiction: https://chariz.com/buy/lastlook
 Icon: https://img.chariz.cloud/icon/lastlook/icon@3x.png
-Name: LastLook (Xinafied-rootless)
+Name: LastLook (Roothide)
 
 Package: com.creaturecoding.libcspreferences
 Version: 1.5.8
@@ -294,6 +294,24 @@ Description: Tweak to dim the screen even further with the brightness slider in 
 Author: Jonas Schiefner
 Name: AdvancedBrightnessSlider
 
+Package: com.lclrc.hammerit
+Version: 1.4.5
+Architecture: iphoneos-arm64e
+Maintainer: lclrc(SquidForce)
+Installed-Size: 2344
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, com.opa334.altlist, com.opa334.ccsupport, firmware (>= 14.0)
+Filename: ./debfiles/com.lclrc.hammerit_1.4.5_iphoneos-arm64e.deb
+Size: 1169846
+MD5sum: e8fe757ee5e0b3a92f4c6502aecf09fb
+SHA1: ed73cba3c66ef5465fbc98b344fbda08427a93a6
+SHA256: 4416e1f372b37681cc895cdb1ceab2bf7184f6c591513aedc5a9d73786479882
+Section: Tweaks
+Description: Control your text or translate as you wish.
+Author: lclrc(SquidForce)
+Icon: file:///var/jb/Library/PreferenceBundles/HammerItPrefs.bundle/HammerIt@3x.png
+Name: Hammer It
+
 Package: com.mrgcgamer.libgcuniversal
 Version: 1.6.4
 Architecture: iphoneos-arm64e
@@ -329,26 +347,6 @@ Section: Tweaks
 Description: iOS 16 Style Battery Indicator
 Author: MTAC
 Name: Ampere
-
-Package: com.mtac.lynxapp
-Version: 2.1
-Architecture: iphoneos-arm64e
-Maintainer: MTAC
-Installed-Size: 804
-Pre-Depends: rootless-compat(>= 0.1)
-Depends: com.mtac.lynxtwo
-Filename: ./debfiles/com.mtac.lynxapp-v2.1.deb
-Size: 558750
-MD5sum: 28b76dd9b1a22a2e4411a8765a259c39
-SHA1: c6257aeb8cebc24a8ae81a8eacf3055e504a59f1
-SHA256: e61d2cdb980238bdfd48c2e7a3cfda9a15ac9ad804a3c32169de3b10160d5d3f
-Section: Utilities
-Description: Homescreen Application for Lynx
-Author: MTAC
-Depiction: https://mtac.app/repo/depiction/web/com.mtac.lynxapp.html
-Icon: file:///Applications/Lynx.app/icon.png
-Name: Lynx Application
-Sileodepiction: https://mtac.app/repo/depiction/native/com.mtac.lynxapp.json
 
 Package: com.nahtedetihw.centeredlabels-rootless
 Version: 1.3
@@ -405,19 +403,18 @@ Installed-Size: 1113
 Pre-Depends: rootless-compat(>= 0.1)
 Depends: firmware (>= 14.0), mobilesubstrate (>= 0.9.5000), com.mrgcgamer.libgcuniversal, preferenceloader
 Conflicts: com.shepgoba.settingswidgets, com.creaturecoding.shuffle
-Replaces: com.twickd.nightwind.onesettings
 Filename: ./debfiles/com.nightwind.onesettingsroothide_2.0.4_iphoneos-arm64e.deb
-Size: 211744
-MD5sum: 0cf868a41845f8f5858c726455a1184e
-SHA1: d673ed6b78a69b8045433aec4e25e7d71db95867
-SHA256: d871b8523b61d07ba121d068cac0e130eab8ad769a48b290486e9b088d9df0b3
+Size: 212008
+MD5sum: 8591f9a19af6027667791dcf66fc5294
+SHA1: c938af7f548f68159097b986b6dc32140e2fc339
+SHA256: 8dceb9296cfb6762adccb993d50bafaf386e81bf1609b7fda9b22b4c153e4a1e
 Section: Tweaks
 Description: A great enhancement to your Settings App!
 Tag: cydia::commercial, compatible_min::ios14.0
 Author: Nightwind <nightwinddev@gmail.com>
 Depiction: https://chariz.com/buy/onesettings
 Icon: https://img.chariz.cloud/icon/onesettings/icon@3x.png
-Name: OneSettings
+Name: OneSettings (Roothide)
 
 Package: com.p2kdev.deleteforeverxs
 Version: 1.1
@@ -494,6 +491,25 @@ Author: PoomSmart
 Depiction: https://poomsmart.github.io/repo/depictions/amber.html
 Name: Amber
 Sileodepiction: https://poomsmart.github.io/repo/sileodepictions/amber.json
+
+Package: com.ps.latesttranslate
+Version: 4.0.0
+Architecture: iphoneos-arm64e
+Maintainer: PoomSmart
+Installed-Size: 168
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), firmware (<< 16.0)
+Filename: ./debfiles/com.ps.latesttranslate_4.0.0_iphoneos-arm64e-1.deb
+Size: 6990
+MD5sum: c4f0c7116708bd5d277445adf7f2de66
+SHA1: 8f4e2c0515be8a1380e9b6c25964d97b94febe02
+SHA256: a37fb6b4d496a30ef9618ef710eac45f502967c6487a5c6df00a12f443e5c223
+Section: Tweaks
+Description: Make Apple's Translate app support all languages to date.
+Author: PoomSmart
+Depiction: https://poomsmart.github.io/repo/depictions/latesttranslate.html
+Name: LatestTranslate
+Sileodepiction: https://poomsmart.github.io/repo/sileodepictions/latesttranslate.json
 
 Package: com.rpgfarm.a-font
 Version: 1.9.3-2
@@ -865,6 +881,70 @@ Description: a more colorful & detailed look for iOS
 Author: XerusDesign <unixdesignios@gmail.com>
 Name: Felicity Pro
 
+Package: com.yourepo.0xkuj.storeswitcher2rootless
+Version: 1.0.4
+Architecture: iphoneos-arm64e
+Maintainer: 0xkuj <0xkujz@gmail.com>
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>= 11)
+Filename: ./debfiles/com.yourepo.0xkuj.storeswitcher2rootless_1.0.4_iphoneos-arm64e.deb
+Size: 19478
+MD5sum: 03c02abb76234759efc470daedabf584
+SHA1: 8cf7301e56973db7ede2e92348b01984ac1d5786
+SHA256: 3f9f9223cd042a1c3c0816671a714ac035b980762eafbb559a6869413d4e1d55
+Section: Tweaks
+Description: Adds a button to switch account in App Store account page on iOS 11+.
+Author: 0xkuj <0xkujz@gmail.com>
+Name: StoreSwitcher 2 (rootless)
+
+Package: com.yourepo.cydiageek.huestatusbar
+Version: 1.0.8
+Architecture: iphoneos-arm64e
+Maintainer: CydiaGeek <lucaluca86@aol.com>
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, org.thebigboss.libcolorpicker
+Filename: ./debfiles/com.yourepo.cydiageek.huestatusbar_1.0.8_iphoneos-arm64e.deb
+Size: 112092
+MD5sum: 84fdd52a2804ea85b7fdf30b28ccc739
+SHA1: d1edb1b19d903ca096033d11525c560c085796ab
+SHA256: 344aa43bc2a6d9ad36233e99abada7b75b43323824ed5d49988e6854bf9dd2f1
+Section: Tweaks
+Description: Custom Colors/Options for Statusbar on System Wide!
+Author: CydiaGeek <lucaluca86@aol.com>
+Name: hueStatusbar
+
+Package: com.yourepo.cydiageek.percentx
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: CydiaGeek <lucaluca86@aol.com>
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate
+Filename: ./debfiles/com.yourepo.cydiageek.percentx_1.0.2_iphoneos-arm64e.deb
+Size: 7212
+MD5sum: 9914675cc97c0437d0fc7838b6e6dd4f
+SHA1: 85677f98dd3445da31f468f2173fbef9fd243cda
+SHA256: 9edf38c3ae3e1b9dc0629baf98ec97caed4b0b97b12ac823d4986f023b728541
+Section: Tweaks
+Description: Show Battery Percentage on Systemwide!
+Author: CydiaGeek <lucaluca86@aol.com>
+Name: PercentX
+
+Package: com.yourepo.cydiageek.uispeed
+Version: 1.0.3
+Architecture: iphoneos-arm64e
+Maintainer: CydiaGeek <lucaluca86@aol.com>
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate
+Filename: ./debfiles/com.yourepo.cydiageek.uispeed_1.0.3_iphoneos-arm64e.deb
+Size: 37700
+MD5sum: 6252d46981a31e98fefce668ccc3e627
+SHA1: b87f4baa9976124d1ea5db86d2d243e51d577960
+SHA256: 98bd727eb9bd0d611911eb74bf68b13c58fd621b61d37fb434e0e5e743bcfae8
+Section: Tweaks
+Description: Make Faster the UI Animations of the Device!
+Author: CydiaGeek <lucaluca86@aol.com>
+Name: UISpeed
+
 Package: jb.acc.GpsManager.rootless
 Version: 2.4.0.3
 Architecture: iphoneos-arm64e
@@ -901,6 +981,24 @@ Description: A simple color picker implementation.
 Tag: role::developer
 Author: Skitty
 Name: libskittycolor
+
+Package: me.ahmedbafkir.dleasy
+Version: 2.13.6
+Architecture: iphoneos-arm64e
+Maintainer: AhmedBafkir <prooxy0@gmail.com>
+Installed-Size: 3200
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: firmware (>= 12.0), mobilesubstrate, preferenceloader
+Filename: ./debfiles/me.ahmedbafkir.dleasy_v2.13.6_iphoneos-arm64e.deb
+Size: 2087802
+MD5sum: a6a7df8f76f2dc8c1a8e18376a989099
+SHA1: 1c822a0459d3c9557bce838c59b83519eec393b1
+SHA256: 6e71651b737723c191e6766785f9e51c4ae453a7ca167252cdd1149aa0f17627
+Section: Tweaks
+Description: Download/Share images & videos from social apps easily!
+Author: AhmedBafkir <prooxy0@gmail.com>
+Icon: https://media.havoc.app/62040a16cc1cde4bfe9aba43?w=0&q=75
+Name: DLEasy
 
 Package: me.ikghd.ikset
 Version: 3.3
@@ -964,6 +1062,42 @@ Description: Priority Hub for iOS 15 (rootless/Ellekit)
 Author: Nepeta & Baw Appie
 Name: Axon
 
+Package: me.tomt000.copylog
+Version: 1.5.6
+Architecture: iphoneos-arm64e
+Maintainer: TomT000
+Installed-Size: 4252
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debfiles/me.tomt000.copylog_v1.5.6_iphoneos-arm64e.deb
+Size: 3713214
+MD5sum: ce7d7713180a25c980c9a948f49773a6
+SHA1: c27c271d1d98ff57b272fa143323efce0c22c9ba
+SHA256: c39bd6f0dc5c30951639641762866ac34e72be1561f6b5d2428504c2059aa529
+Section: Tweaks
+Description: Clipboard history manager for iOS!
+Author: TomT000
+Name: CopyLog
+
+Package: mterminal
+Version: 1.6
+Architecture: iphoneos-arm64e
+Maintainer: D.F (MTAC) <mtac@mtac.app>
+Installed-Size: 272
+Pre-Depends: rootless-compat(>= 0.1)
+Depends: coreutils, firmware (>= 11.0), gettext-localizations, system-cmds, zsh
+Filename: ./debfiles/mterminal_1.6_iphoneos-arm64e.deb
+Size: 99884
+MD5sum: 0bb66c2f668fdb86bbd7ae334b271fb4
+SHA1: 0c9138aaced092d25c923e22021b107cc4ab6495
+SHA256: e5733d5bb5d8c36191105db743c977543b5835680739ae0075e826e0ab3db462
+Section: Utilities
+Description: A MobileTerminal fork
+Author: lordscotland <admin@officialscheduler.com>
+Icon: https://mtac.app/repo/assets/com.officialscheduler.mterminal/icon-rounded.png
+Name: MTerminal
+Sileodepiction: https://mtac.app/repo/depiction/native/com.officialscheduler.mterminal.json
+
 Package: net.p0358.noti-fi
 Version: 1.0.2
 Architecture: iphoneos-arm64e
@@ -981,6 +1115,23 @@ Section: Tweaks
 Description: Android Wi-Fi connection notification
 Author: Baw Appie, p0358
 Name: Noti-Fi
+
+Package: net.pane.l.evilscheme
+Version: 19.07.2002
+Architecture: iphoneos-arm64e
+Maintainer: 0xkuj
+Installed-Size: 872
+Pre-Depends: rootless-compat(>= 0.1)
+Replaces: com.lpane.browserdefault,com.lpane.googlemapsdefault
+Filename: ./debfiles/net.pane.l.evilscheme_19.07.2002_iphoneos-arm64e.deb
+Size: 144930
+MD5sum: 2aa4723bfe1ef070c570e60a5d0dd190
+SHA1: 046b088e4a499d43d2a945efc55af81fb1cb11af
+SHA256: c373f4465a8cc081a33a1f54dac71e087fdc0333de8fc8cbe91288b9a810ec37
+Section: Tweaks
+Description: Manage default browser, navigation app, package manager, and more!
+Author: Lorenzo Pane
+Name: EvilScheme
 
 Package: org.mr.erika-rootless
 Version: 1.12.1
@@ -1023,26 +1174,24 @@ Icon: https://media.havoc.app/620ca96dc80367a0d8c7f5a0?w=3840&q=75
 Name: iKeywi 4 (rootless)
 Sileodepiction: https://mrepo.org/sileo/5545
 
-Package: org.mr.velvet2-rootless
+Package: org.mr.velvet2-roothide
 Version: 2.0.3
 Architecture: iphoneos-arm64e
-Maintainer: MainRepo
+Maintainer: NoisyFlake
 Installed-Size: 596
 Pre-Depends: rootless-compat(>= 0.1)
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Conflicts: com.initwithframe.velvet
-Filename: ./debfiles/org.mr.velvet2-rootless-v2.0.3.deb
-Size: 122124
-MD5sum: 5a145906540503b120f6cfe5a2d94da8
-SHA1: 46d88d9506de7dd584338248446f1d62c5f99d25
-SHA256: 6f6e6d0050bbc1e9a8e4a7ec2eceb0ceaa10e9758aeda8c646ea94b1af2e9d4e
+Filename: ./debfiles/org.mr.velvet2-roothide_2.0.3_iphoneos-arm64e.deb
+Size: 97248
+MD5sum: 4311c935359145123c313400d7f9600e
+SHA1: e710e90f04b0fddb9d65a5835175b67b2e8cc89e
+SHA256: 1176c1911497142364bf112c5da546bd43ca6693c738b50b18f0dd64365dcbc0
 Section: Tweaks
 Description: A fully customizable notification experience
 Author: NoisyFlake <support@noisyflake.com>
-Depiction: https://mrepo.org/depiction/5474
 Icon: https://img.chariz.cloud/icon/velvet-2/icon@3x.png
-Name: Velvet 2 (rootless)
-Sileodepiction: https://mrepo.org/sileo/5474
+Name: Velvet 2 (Roothide)
 
 Package: org.thebigboss.libcolorpicker
 Version: 1.6.9.1
