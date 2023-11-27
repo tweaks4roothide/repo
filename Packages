@@ -220,6 +220,23 @@ Dev: ichitaso
 Icon: https://cydia.ichitaso.com/icons/PrimalFolder2.png
 Name: PrimalFolder 2
 
+Package: com.imokhles.disablertl
+Version: 0.0.1-3+debug
+Architecture: iphoneos-arm64e
+Maintainer: @iMokhles
+Installed-Size: 200
+Depends: mobilesubstrate
+Filename: ./debfiles/com.imokhles.disablertl_0.0.1-3+debug_iphoneos-arm64e.deb
+Size: 4656
+MD5sum: 9e59cc814646499007403a090eccb8fd
+SHA1: e6577d3f5386a5ff6b1c8b586f98f1627db16704
+SHA256: 9a042a2d97640cfc16958c16f53f026a327474cd7bec7211301ac0c0ecac82c7
+Section: Tweaks
+Description: DisableRTL all over the system
+Author: @iMokhles
+Icon: https://raw.githubusercontent.com/RootHide/roothide.github.io/main/CydiaIcon.png
+Name: DisableRTL (Roothide)
+
 Package: com.ioscreatix.sugarcane
 Version: 1.2.4.2
 Architecture: iphoneos-arm64e
