@@ -62,13 +62,12 @@ Installed-Size: 1331
 Pre-Depends: rootless-compat(>= 0.1)
 Depends: mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.15), firmware (>= 12.0)
 Filename: ./debfiles/com.anthopak.lastlook.roothide_3.6.1_iphoneos-arm64e.deb
-Size: 285944
-MD5sum: 5562dedb52d04f3dbd4eabc80712de13
-SHA1: b5686d0023161837e61ff316dcb2bfd30e585133
-SHA256: bae12e9a85ac5f99b010512a358c8f65e1c41de6d319871a85dd38eca7cb5d1d
+Size: 285328
+MD5sum: 5408ec9c529dbdcb27cce4afa3312e0c
+SHA1: 8cb303b980c3f9604885d2a1823fa653ae964aa5
+SHA256: 8d805e548fff4b8c5dea03dd7878cb896472f59c635f3e1f171c49773ecdf1b6
 Section: Tweaks
 Description: An AOD tweak that feels stock, with endless possibilities!
-Tag: cydia::commercial, compatible_min::ios12.0
 Author: AnthoPak <anthopakdev@gmail.com>
 Depiction: https://chariz.com/buy/lastlook
 Icon: https://img.chariz.cloud/icon/lastlook/icon@3x.png
@@ -404,13 +403,12 @@ Pre-Depends: rootless-compat(>= 0.1)
 Depends: firmware (>= 14.0), mobilesubstrate (>= 0.9.5000), com.mrgcgamer.libgcuniversal, preferenceloader
 Conflicts: com.shepgoba.settingswidgets, com.creaturecoding.shuffle
 Filename: ./debfiles/com.nightwind.onesettingsroothide_2.0.4_iphoneos-arm64e.deb
-Size: 212008
-MD5sum: 8591f9a19af6027667791dcf66fc5294
-SHA1: c938af7f548f68159097b986b6dc32140e2fc339
-SHA256: 8dceb9296cfb6762adccb993d50bafaf386e81bf1609b7fda9b22b4c153e4a1e
+Size: 211524
+MD5sum: 26d8b3f2d70b4f4505b772dfb6a9ab2a
+SHA1: 0a823c90886dfafd3b77d9cd6ba6932a60d412f3
+SHA256: 912eda891e8071c42c972ccde4a010f5d4c02449f75d3846e79575bf476b4681
 Section: Tweaks
 Description: A great enhancement to your Settings App!
-Tag: cydia::commercial, compatible_min::ios14.0
 Author: Nightwind <nightwinddev@gmail.com>
 Depiction: https://chariz.com/buy/onesettings
 Icon: https://img.chariz.cloud/icon/onesettings/icon@3x.png
